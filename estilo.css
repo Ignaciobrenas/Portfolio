@@ -1,0 +1,888 @@
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat';
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        /* *********************/
+        /* seccion I N I C I O */
+        /* *********************/
+        
+       /* seccion I N I C I O */
+/* *********************/
+
+#inicio {
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/fondo-inicio.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio .contenido header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    color: #0078D7;
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    position: relative; /* Para que funcione el efecto de la línea debajo */
+    transition: .5s;
+}
+
+/* Animación de color y línea para los enlaces de navegación */
+#inicio .contenido header .contenido-header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0078D7; /* Color de la línea debajo */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover {
+    color: #0078D7; /* Cambia el color del texto al hacer hover */
+    transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba */
+}
+
+/* Efecto de expansión de la línea debajo del texto */
+#inicio .contenido header .contenido-header nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#inicio .contenido header .contenido-header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header .redes a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+/* Animación al pasar el ratón sobre los enlaces de redes sociales */
+#inicio .contenido header .contenido-header .redes a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0078D7; /* Color de la línea debajo */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover {
+    color: #0078D7; /* Cambia el color del texto al hacer hover */
+    transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba */
+}
+
+/* Efecto de expansión de la línea debajo del texto */
+#inicio .contenido header .contenido-header .redes a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#inicio .contenido header .contenido-header .seleccionado {
+    color: #0078D7;
+}
+
+        
+        #inicio .contenido .presentacion {
+            max-width: 1100px;
+            height: 100vh;
+            margin: auto;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #inicio .contenido .presentacion .bienvenida {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        
+        #inicio .contenido .presentacion h2 {
+            font-size: 55px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        #inicio .contenido .presentacion h2 span {
+            font-size: 50px;
+            color: #0078D7;
+        }
+        
+        #inicio .contenido .presentacion .descripcion {
+            max-width: 700px;
+            margin: 25px auto;
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        #inicio .contenido .presentacion a {
+            text-decoration: none;
+            display: inline-block;
+            margin: 25px;
+            padding: 20px 25px;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .5s;
+        }
+        
+        #inicio .contenido .presentacion a:hover {
+            background-color: #0078D7;
+        }
+        
+        #icono-nav {
+            color: #fff;
+            display: none;
+        }
+        /* *********************/
+        /* seccion S O B R E  M I */
+        /* *********************/
+        
+        #sobremi {
+            max-width: 1100px;
+            margin: auto;
+            padding: 100px 15px;
+            color: #111135;
+            display: flex;
+        }
+        
+        #sobremi .contenedor-foto {
+            max-width: 400px;
+            margin-right: 70px;
+        }
+        
+        #sobremi .contenedor-foto img {
+            padding: 20px;
+            width: 100%;
+            border-radius: 50px;
+            background-color: #f3f3f3;
+        }
+        
+        #sobremi .sobremi {
+            margin: 0 40px;
+        }
+        
+        #sobremi .sobremi.titulo-seccion {
+            text-align: center;
+            font-size: 32px; /* Aumento de tamaño para un impacto visual mayor */
+            font-weight: bold; /* Añadido para que el título tenga más fuerza */
+            text-transform: uppercase;
+            color: #111135;
+            text-decoration: underline;
+            text-decoration-color: #0078D7; /* Color del subrayado ajustado */
+            text-decoration-thickness: 6px; /* Aumento del grosor del subrayado para mayor visibilidad */
+            margin-bottom: 50px; /* Más espacio en la parte inferior */
+            
+            /* Sombra para dar profundidad */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.15); 
+            
+            /* Animación de aparición */
+            animation: fadeInTitle 1s ease-out;
+        }
+        
+        /* Animación de aparición para el título */
+        @keyframes fadeInTitle {
+            0% {
+                opacity: 0;
+                transform: translateY(20px); /* Inicia desde abajo */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* Llega a la posición final */
+            }
+        }
+        
+        
+        #sobremi .sobremi h2 {
+            font-size: 60px;
+            font-weight: bold;
+            margin: 20px 0;
+            letter-spacing: 2px;
+        }
+        
+        #sobremi .sobremi h2 span {
+            color: #0078D7;
+        }
+        
+        #sobremi .sobremi h3 {
+            font-size: 30px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        
+        #sobremi .sobremi p {
+            font-size: 18px;
+            line-height: 25px;
+            color: #565656;
+            margin-bottom: 12px;
+        }
+        
+        #sobremi .sobremi a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            border-radius: 30px;
+            border: 1px solid #000;
+            padding: 10px 20px;
+            margin-top: 30px;
+            transition: .5s;
+        }
+        
+        #sobremi .sobremi a:hover {
+            background-color: #0078D780;
+            color: #fff;
+        }
+        /* *********************/
+        /* seccion S E R V I C I O S */
+        /* *********************/
+     /* Animaciones para la sección de servicios */
+
+/* Animación de aparición suave */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación de escala en los iconos */
+@keyframes scaleIcon {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Sección de servicios */
+#servicios {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3; /* Color de fondo suave */
+    animation: fadeIn 1s ease-out;
+}
+
+/* Título de la sección */
+#servicios .titulo-seccion {
+    text-align: center;
+    font-size: 32px; /* Aumento de tamaño para un impacto visual mayor */
+    font-weight: bold; /* Añadido para que el título tenga más fuerza */
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #0078D7; /* Color del subrayado ajustado */
+    text-decoration-thickness: 6px; /* Aumento del grosor del subrayado para mayor visibilidad */
+    margin-bottom: 50px; /* Más espacio en la parte inferior */
+    
+    /* Sombra para dar profundidad */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.15); 
+    
+    /* Animación de aparición */
+    animation: fadeInTitle 1s ease-out;
+}
+
+/* Animación de aparición para el título */
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Inicia desde abajo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Llega a la posición final */
+    }
+}
+
+
+/* Fila de servicios */
+#servicios .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 30px auto;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Servicios individuales */
+#servicios .fila .servicio {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+    animation: fadeIn 2s ease-out;
+    border: 2px solid #0078D7; /* Borde azul */
+}
+
+/* Efecto hover para los servicios */
+#servicios .fila .servicio:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    background-color: #0078D7; /* Fondo azul al pasar el ratón */
+    color: #fff; /* Cambiar color del texto a blanco */
+}
+
+/* Iconos de servicio con animación de escala */
+#servicios .fila .servicio .icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #0078D7; /* Fondo azul para los iconos */
+    padding: 20px;
+    margin-bottom: 25px;
+    animation: scaleIcon 0.3s ease-in-out;
+    color: white; /* Iconos blancos */
+}
+
+/* Efecto hover en iconos */
+#servicios .fila .servicio .icono:hover {
+    background-color: #fff; /* Cambio de fondo a blanco al pasar el ratón */
+    color: #0078D7; /* Cambio de color del icono a azul */
+    animation: scaleIcon 0.3s ease-in-out forwards;
+}
+
+/* Títulos dentro de los servicios */
+#servicios .fila .servicio h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    animation: fadeIn 2.5s ease-out;
+    color: #0078D7; /* Título azul dentro de la caja */
+}
+
+/* Línea divisoria en cada servicio */
+#servicios .fila .servicio hr {
+    width: 30%;
+    margin: auto;
+    color: #0078D7; /* Color de la línea divisoria */
+    margin-bottom: 25px;
+    animation: fadeIn 2.5s ease-out;
+}
+
+/* Lista de servicios */
+#servicios .fila .servicio ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    animation: fadeIn 3s ease-out;
+}
+
+/* Descripción dentro de cada servicio */
+#servicios .fila .servicio p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #000; /* Texto negro por defecto */
+    animation: fadeIn 3s ease-out;
+}
+
+/* Cambiar el color de las letras a blancas cuando el cursor pasa sobre las cajas */
+#servicios .fila .servicio:hover p,
+#servicios .fila .servicio:hover h4 {
+    color: #fff; /* Cambiar a blanco */
+}
+
+
+        /* *********************/
+        /* seccion S K I L L S */
+      /* Contenedor para la fila de experiencias */
+/* Contenedor para las experiencias */
+/* Definición de colores para facilitar la personalización */
+:root {
+    --primary-color: #0078D7;
+    --secondary-color: #111135;
+    --hover-color: #0056b3;
+    --overlay-color: rgba(0, 0, 0, 0.5);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --text-shadow-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Contenedor principal con diseño de grid */
+.experiencia-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centra las columnas horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px; /* Espaciado general */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+/* Estilo de cada tarjeta */
+.experiencia {
+    position: relative; /* Para posicionar la superposición correctamente */
+    display: flex;
+    justify-content: center; /* Centrado horizontal interno */
+    align-items: center; /* Centrado vertical interno */
+    overflow: hidden;
+    max-width: 100%; /* Ajusta al ancho de la columna */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color); /* Sombra ligera */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencia img {
+    width: 100%; /* La imagen ocupa todo el ancho */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px;
+}
+
+/* Efecto de zoom al pasar el ratón */
+.experiencia:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0 6px 16px var(--shadow-color); /* Aumenta la sombra al hacer hover */
+}
+
+/* Overlay oscuro con efecto de transición */
+.experiencia .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.experiencia:hover .overlay {
+    opacity: 1;
+}
+
+/* Información en la tarjeta */
+.experiencia .info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+.experiencia .info h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.experiencia .info p {
+    font-size: 14px;
+}
+
+/* Botón de información dentro de la tarjeta */
+.experiencia .btn-info {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.experiencia .btn-info:hover {
+    background-color: var(--hover-color);
+}
+
+.experiencia .btn-info:focus {
+    outline: 2px solid var(--hover-color);
+    outline-offset: 2px;
+}
+
+/* Estilo para el título de la sección */
+.titulo-seccion {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 6px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 5px var(--shadow-color), 0 4px 10px var(--text-shadow-color);
+    animation: fadeInTitle 1s ease-out;
+}
+
+/* Animación de aparición para el título */
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Estilo para el Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro más opaco */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+    animation: modalFadeIn 0.5s ease; /* Añade animación */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animación para el modal */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+        
+        /* *********************/
+        /* seccion Proyectos
+        /* *********************/
+       /* Sección de Proyectos */
+#proyectos {
+    max-width: 1100px;
+    padding: 100px 15px;
+    margin: auto;
+    background-color: #f3f3f3; /* Fondo suave para la sección */
+    border-radius: 10px;
+}
+
+/* Título de la sección */
+#proyectos .titulo-seccion {
+    text-align: center;
+    font-size: 32px; /* Aumento de tamaño para un impacto visual mayor */
+    font-weight: bold; /* Añadido para que el título tenga más fuerza */
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #0078D7; /* Color del subrayado ajustado */
+    text-decoration-thickness: 6px; /* Aumento del grosor del subrayado para mayor visibilidad */
+    margin-bottom: 50px; /* Más espacio en la parte inferior */
+    
+    /* Sombra para dar profundidad */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.15); 
+    
+    /* Animación de aparición */
+    animation: fadeInTitle 1s ease-out;
+}
+
+/* Animación de aparición para el título */
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Inicia desde abajo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Llega a la posición final */
+    }
+}
+
+
+/* Fila de proyectos */
+#proyectos .fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Mejora el espaciado entre los proyectos */
+    margin: 30px 0;
+}
+
+/* Proyecto individual */
+#proyectos .fila .proyecto {
+    max-width: 32%; /* Asegura que tres proyectos quepan bien en una fila */
+    border: 1px solid #0078D7;
+    border-radius: 10px; /* Bordes redondeados */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    transition: transform 0.3s ease-in-out; /* Efecto suave al interactuar */
+}
+
+/* Imagen del proyecto */
+#proyectos .fila .proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out; /* Transición suave para el cambio de filtro */
+    border-bottom: 2px solid #0078D7; /* Línea sutil debajo de la imagen */
+}
+
+/* Efecto hover en la imagen */
+#proyectos .fila .proyecto:hover img {
+    filter: grayscale(0);
+    transform: scale(1.05); /* Efecto de escala al hacer hover */
+}
+
+/* Caja de información */
+#proyectos .fila .proyecto .info {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, bottom 0.5s ease;
+    border-top: 2px solid #0078D7; /* Línea superior de la caja de texto */
+    border-radius: 0 0 10px 10px; /* Bordes redondeados en la parte inferior */
+}
+
+/* Hover sobre el proyecto para mostrar la información */
+#proyectos .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+/* Botón dentro de la caja de información */
+#proyectos .fila .proyecto .info .btn-info {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+}
+
+/* Efecto hover en el botón */
+#proyectos .fila .proyecto .info .btn-info:hover {
+    background-color: #005bb5;
+    transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+}
+
+        
+        
+        
+       
+        /* *********************/
+        /* seccion F O O T E R */
+        /* *********************/
+        
+        footer {
+            background-color: #111135;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+            display: inline-block;
+            transition: color 0.3s, transform 0.3s ease-in-out;
+        }
+        
+        /* Animación al pasar el ratón sobre los enlaces */
+        footer a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #0078D7;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        
+        footer a:hover {
+            color: #0078D7;
+            transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba */
+        }
+        
+        /* Efecto de expansión de la línea debajo del texto */
+        footer a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        
+        
+        /* *********************/
+        /* seccion R E S P O N S I V E */
+        /* *********************/
+        
+        @media screen and (max-width: 800px) {
+            .redes {
+                display: none;
+            }
+            nav {
+                display: none;
+            }
+            nav.responsive {
+                display: block;
+                background-color: rgba(0, 0, 0, .8);
+                width: 100%;
+                position: absolute;
+                top: 48px;
+                left: 0;
+                padding: 10px 0;
+            }
+            nav.responsive ul {
+                display: block !important;
+                text-align: center;
+            }
+            nav.responsive ul li {
+                margin: 5px 0;
+            }
+            #icono-nav {
+                display: block;
+            }
+            #inicio .contenido .presentacion h2 {
+                font-size: 40px;
+            }
+            /* seccion SOBRE MI */
+            #sobremi {
+                padding: 50px 0;
+                display: block;
+            }
+            #sobremi .contenedor-foto {
+                max-width: 200px;
+                margin: auto;
+            }
+            #sobremi .contenedor-foto img {
+                padding: 8px;
+            }
+            #sobremi .sobremi .titulo-seccion {
+                text-align: center;
+            }
+            #sobremi .sobremi h2 {
+                font-size: 25px;
+                text-align: center;
+            }
+            /* seccion MIS SERVICIOS */
+            #servicios {
+                padding: 50px 15px;
+            }
+            #servicios .fila {
+                display: block;
+            }
+            #servicios .fila .servicio {
+                margin: 10px auto;
+            }
+            /* seccion HABLIDADES MI */
+            .contenedor-skills {
+                padding: 50px 20px;
+            }
+            /* seccion proyectos */
+            #proyectos {
+                padding: 50px 0;
+            }
+            #proyectos .fila {
+                display: block;
+            }
+            #proyectos .fila .proyecto {
+                margin: 10px auto;
+            }
+           
+        }
