@@ -12,6 +12,10 @@
         /* *********************/
         /* seccion I N I C I O */
         /* *********************/
+.logo {
+max-width: 100px; /* Ajusta el tamaño según sea necesario */
+height: auto;
+     }
         
        /* seccion I N I C I O */
 /* *********************/
@@ -220,7 +224,7 @@
         
         #sobremi .sobremi.titulo-seccion {
             text-align: center;
-            font-size: 32px; /* Aumento de tamaño para un impacto visual mayor */
+            font-size: 50px; /* Aumento de tamaño para un impacto visual mayor */
             font-weight: bold; /* Añadido para que el título tenga más fuerza */
             text-transform: uppercase;
             color: #111135;
