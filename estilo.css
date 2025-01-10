@@ -722,7 +722,7 @@ height: auto;
 #proyectos .fila .proyecto .info {
     position: absolute;
     left: 0;
-    bottom: -40px;
+    bottom: -230px;
     background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
     color: white;
     width: 100%;
@@ -886,7 +886,7 @@ height: auto;
                 display: block;
             }
             #proyectos .fila .proyecto {
-                margin: 10px auto;
+                margin: 20px auto;
             }
            
         }
