@@ -44,4 +44,5 @@ function efectoHabilidades() {
             skills.classList.add("animado"); // Marca las habilidades como animadas
         }
     }
+    
 }

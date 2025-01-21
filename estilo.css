@@ -19,12 +19,21 @@ height: auto;
         
        /* seccion I N I C I O */
 /* *********************/
-
 #inicio {
     background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("img/fondo-inicio.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
+    animation: fadeInBackground 2s ease-out; /* Animación de aparición de fondo */
+}
+
+@keyframes fadeInBackground {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #inicio .contenido header {
@@ -33,6 +42,16 @@ height: auto;
     width: 100%;
     z-index: 100;
     top: 0;
+    animation: slideDownHeader 1s ease-out;
+}
+
+@keyframes slideDownHeader {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 #inicio .contenido header .contenido-header {
@@ -47,6 +66,17 @@ height: auto;
 #inicio .contenido header .contenido-header h1 {
     text-align: center;
     color: #0078D7;
+    opacity: 0;
+    animation: fadeInText 1.5s 0.5s forwards; /* Animación de aparición del título */
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #inicio .contenido header .contenido-header nav ul {
@@ -60,17 +90,29 @@ height: auto;
     color: #fff;
     margin: 0 12px;
     font-weight: 400;
-    position: relative; /* Para que funcione el efecto de la línea debajo */
+    position: relative;
     transition: .5s;
+    opacity: 0;
+    animation: fadeInLinks 2s 0.7s forwards; /* Animación de aparición de enlaces */
 }
 
-/* Animación de color y línea para los enlaces de navegación */
+@keyframes fadeInLinks {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #inicio .contenido header .contenido-header nav ul li a::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #0078D7; /* Color de la línea debajo */
+    background-color: #0078D7;
     bottom: 0;
     left: 0;
     transform: scaleX(0);
@@ -79,11 +121,10 @@ height: auto;
 }
 
 #inicio .contenido header .contenido-header nav ul li a:hover {
-    color: #0078D7; /* Cambia el color del texto al hacer hover */
-    transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba */
+    color: #0078D7;
+    transform: translateY(-5px);
 }
 
-/* Efecto de expansión de la línea debajo del texto */
 #inicio .contenido header .contenido-header nav ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -95,25 +136,28 @@ height: auto;
     display: inline-block;
     margin-left: 10px;
     transition: .5s;
-}
-
-#inicio .contenido header .contenido-header .redes a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
     font-size: 18px;
-    position: relative;
-    display: inline-block;
-    transition: color 0.3s, transform 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeInSocialLinks 2s 1s forwards; /* Animación de aparición de enlaces de redes sociales */
 }
 
-/* Animación al pasar el ratón sobre los enlaces de redes sociales */
+@keyframes fadeInSocialLinks {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 #inicio .contenido header .contenido-header .redes a::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #0078D7; /* Color de la línea debajo */
+    background-color: #0078D7;
     bottom: 0;
     left: 0;
     transform: scaleX(0);
@@ -122,19 +166,30 @@ height: auto;
 }
 
 #inicio .contenido header .contenido-header .redes a:hover {
-    color: #0078D7; /* Cambia el color del texto al hacer hover */
-    transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba */
+    color: #0078D7;
+    transform: translateY(-5px);
 }
 
-/* Efecto de expansión de la línea debajo del texto */
 #inicio .contenido header .contenido-header .redes a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-#inicio .contenido header .contenido-header .seleccionado {
-    color: #0078D7;
+
+
+
+@keyframes pulseEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
+
 
         
         #inicio .contenido .presentacion {
@@ -194,106 +249,163 @@ height: auto;
             color: #fff;
             display: none;
         }
+
         /* *********************/
         /* seccion S O B R E  M I */
         /* *********************/
         
-        #sobremi {
-            max-width: 1100px;
-            margin: auto;
-            padding: 100px 15px;
-            color: #111135;
-            display: flex;
-        }
-        
-        #sobremi .contenedor-foto {
-            max-width: 400px;
-            margin-right: 70px;
-        }
-        
-        #sobremi .contenedor-foto img {
-            padding: 20px;
-            width: 100%;
-            border-radius: 50px;
-            background-color: #f3f3f3;
-        }
-        
-        #sobremi .sobremi {
-            margin: 0 40px;
-        }
-        
-        #sobremi .sobremi.titulo-seccion {
-            text-align: center;
-            font-size: 50px; /* Aumento de tamaño para un impacto visual mayor */
-            font-weight: bold; /* Añadido para que el título tenga más fuerza */
-            text-transform: uppercase;
-            color: #111135;
-            text-decoration: underline;
-            text-decoration-color: #0078D7; /* Color del subrayado ajustado */
-            text-decoration-thickness: 6px; /* Aumento del grosor del subrayado para mayor visibilidad */
-            margin-bottom: 50px; /* Más espacio en la parte inferior */
-            
-            /* Sombra para dar profundidad */
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.15); 
-            
-            /* Animación de aparición */
-            animation: fadeInTitle 1s ease-out;
-        }
-        
-        /* Animación de aparición para el título */
-        @keyframes fadeInTitle {
-            0% {
-                opacity: 0;
-                transform: translateY(20px); /* Inicia desde abajo */
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0); /* Llega a la posición final */
-            }
-        }
-        
-        
-        #sobremi .sobremi h2 {
-            font-size: 60px;
-            font-weight: bold;
-            margin: 20px 0;
-            letter-spacing: 2px;
-        }
-        
-        #sobremi .sobremi h2 span {
-            color: #0078D7;
-        }
-        
-        #sobremi .sobremi h3 {
-            font-size: 30px;
-            font-weight: 500;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            letter-spacing: 1px;
-        }
-        
-        #sobremi .sobremi p {
-            font-size: 18px;
-            line-height: 25px;
-            color: #565656;
-            margin-bottom: 12px;
-        }
-        
-        #sobremi .sobremi a {
-            display: inline-block;
-            text-decoration: none;
-            color: #000;
-            border-radius: 30px;
-            border: 1px solid #000;
-            padding: 10px 20px;
-            margin-top: 30px;
-            transition: .5s;
-        }
-        
-        #sobremi .sobremi a:hover {
-            background-color: #0078D780;
-            color: #fff;
-        }
+ #sobremi {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#sobremi .contenedor-foto {
+    max-width: 300px; /* Reducción de tamaño de la foto */
+    margin-right: 50px;
+    position: relative;
+    overflow: hidden; /* Asegura que la animación no se desborde */
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más suave y pronunciada */
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#sobremi .contenedor-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+#sobremi .contenedor-foto:hover img {
+    transform: scale(1.1); /* Aumento en el hover de la imagen */
+    filter: brightness(1.1); /* Ligera mejora en el brillo al hacer hover */
+}
+
+#sobremi .contenedor-foto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid #0078D7; /* Marco azul */
+    border-radius: 50%;
+    opacity: 0;
+    animation: borderAnimation 2s infinite ease-in-out; /* Animación más suave y fluida */
+}
+
+@keyframes borderAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.15); /* Expansión más sutil del borde */
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+
+#sobremi .sobremi {
+    margin: 0 40px;
+    max-width: 650px;
+}
+
+#sobremi .sobremi.titulo-seccion {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #0078D7;
+    text-decoration-thickness: 6px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.15);
+    animation: fadeInTitle 1s ease-out;
+}
+
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#sobremi .sobremi h2 {
+    font-size: 50px; /* Tamaño reducido para un diseño más equilibrado */
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    color: #111135;
+}
+
+#sobremi .sobremi h2 span {
+    color: #0078D7;
+}
+
+#sobremi .sobremi h3 {
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#sobremi .sobremi p {
+    font-size: 18px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+    opacity: 0;
+    animation: fadeInText 2s forwards;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#sobremi .sobremi a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    border: 1px solid #000;
+    padding: 12px 30px; /* Tamaño de botón ajustado */
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    background-color: #f3f3f3;
+    font-weight: bold;
+}
+
+#sobremi .sobremi a:hover {
+    background-color: #0078D780;
+    color: #fff;
+    transform: scale(1.1); /* Efecto de agrandamiento en hover */
+}
+
         /* *********************/
         /* seccion S E R V I C I O S */
         /* *********************/
@@ -365,90 +477,139 @@ height: auto;
 #servicios .fila {
     display: flex;
     justify-content: space-between;
-    max-width: 1150px;
-    margin: 30px auto;
-    animation: fadeIn 1.5s ease-out;
+    max-width: 1200px; /* Aumenté el máximo de ancho */
+    margin: 40px auto;
+    animation: fadeIn 1s ease-out;
+    gap: 30px; /* Añadí un espacio entre los servicios */
 }
 
 /* Servicios individuales */
 #servicios .fila .servicio {
-    max-width: 350px;
+    width: 100%; /* Deja que cada servicio ocupe todo su espacio disponible */
+    max-width: 320px; /* Limité el ancho máximo */
     background-color: #fff;
-    padding: 30px;
-    margin: 0 5px;
-    border-radius: 5px;
-    transition: .5s;
-    animation: fadeIn 2s ease-out;
+    padding: 40px;
+    margin: 0 10px;
+    border-radius: 12px; /* Bordes más redondeados */
     border: 2px solid #0078D7; /* Borde azul */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    animation: fadeIn 2s ease-out;
 }
 
 /* Efecto hover para los servicios */
 #servicios .fila .servicio:hover {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-    background-color: #0078D7; /* Fondo azul al pasar el ratón */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    transform: translateY(-10px); /* Movimiento hacia arriba */
+    background-color: #005B9F; /* Fondo azul más oscuro */
     color: #fff; /* Cambiar color del texto a blanco */
+    border-color: #003F73; /* Borde más oscuro al hacer hover */
 }
 
 /* Iconos de servicio con animación de escala */
 #servicios .fila .servicio .icono {
     display: inline-block;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    background-color: #0078D7; /* Fondo azul para los iconos */
+    background-color: #0078D7; /* Fondo azul */
     padding: 20px;
-    margin-bottom: 25px;
-    animation: scaleIcon 0.3s ease-in-out;
+    margin-bottom: 30px;
+    animation: scaleIcon 0.4s ease-in-out;
     color: white; /* Iconos blancos */
+    transition: all 0.3s ease;
 }
 
 /* Efecto hover en iconos */
 #servicios .fila .servicio .icono:hover {
-    background-color: #fff; /* Cambio de fondo a blanco al pasar el ratón */
-    color: #0078D7; /* Cambio de color del icono a azul */
-    animation: scaleIcon 0.3s ease-in-out forwards;
+    background-color: #fff; /* Fondo blanco */
+    color: #0078D7; /* Cambio de color a azul */
+    transform: scale(1.1); /* Agrandar icono */
+    animation: scaleIcon 0.4s ease-in-out forwards;
 }
 
 /* Títulos dentro de los servicios */
 #servicios .fila .servicio h4 {
-    font-size: 22px;
-    margin-bottom: 25px;
-    animation: fadeIn 2.5s ease-out;
-    color: #0078D7; /* Título azul dentro de la caja */
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #005B9F; /* Título azul más oscuro */
+    font-weight: 600;
+    transition: color 0.3s ease; /* Transición suave para el título */
 }
 
 /* Línea divisoria en cada servicio */
 #servicios .fila .servicio hr {
-    width: 30%;
+    width: 40%;
     margin: auto;
-    color: #0078D7; /* Color de la línea divisoria */
-    margin-bottom: 25px;
-    animation: fadeIn 2.5s ease-out;
+    border-top: 2px solid #0078D7; /* Línea más gruesa */
+    margin-bottom: 30px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Efecto hover sobre la línea divisoria */
+#servicios .fila .servicio:hover hr {
+    width: 60%; /* Línea más ancha al hacer hover */
 }
 
 /* Lista de servicios */
 #servicios .fila .servicio ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
-    animation: fadeIn 3s ease-out;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    transition: opacity 0.3s ease;
 }
 
 /* Descripción dentro de cada servicio */
 #servicios .fila .servicio p {
-    font-size: 14px;
-    line-height: 22px;
-    color: #000; /* Texto negro por defecto */
-    animation: fadeIn 3s ease-out;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333; /* Texto gris oscuro */
+    transition: color 0.3s ease;
 }
 
-/* Cambiar el color de las letras a blancas cuando el cursor pasa sobre las cajas */
+/* Cambiar color de texto al hacer hover */
 #servicios .fila .servicio:hover p,
 #servicios .fila .servicio:hover h4 {
-    color: #fff; /* Cambiar a blanco */
+    color: #fff; /* Texto blanco al hacer hover */
 }
+
+/* Efecto para las etiquetas (li) */
+#servicios .fila .servicio ul li {
+    font-size: 16px;
+    color: #0078D7;
+    font-weight: 500;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto hover para las etiquetas */
+#servicios .fila .servicio ul li:hover {
+    transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
+    color: #005B9F; /* Cambiar a azul más oscuro */
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación para los iconos */
+@keyframes scaleIcon {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
 
 
         /* *********************/
@@ -597,33 +758,80 @@ height: auto;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro más opaco */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro más opaco */
     padding-top: 60px;
+    animation: fadeInModal 0.5s ease-in-out; /* Efecto de entrada del modal */
+}
+
+/* Efecto de fade-in para el modal */
+@keyframes fadeInModal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    border-radius: 8px;
-    animation: modalFadeIn 0.5s ease; /* Añade animación */
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 60%;
+    max-width: 800px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border: none;
+    animation: modalSlideIn 0.5s ease-out;
+}
+
+/* Efecto de deslizamiento para el contenido del modal */
+@keyframes modalSlideIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
 }
 
 .close {
-    color: #aaa;
+    color: #ff4d4d; /* Color rojo vibrante para el botón de cerrar */
     float: right;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
+    transition: color 0.3s ease; /* Transición suave al pasar el ratón */
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
+    color: #ff1a1a; /* Rojo más oscuro al pasar el ratón */
     cursor: pointer;
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño del ícono */
 }
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.modal-body {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Fondo del modal */
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal-footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
 
 /* Animación para el modal */
 @keyframes modalFadeIn {
@@ -759,6 +967,26 @@ height: auto;
     transform: scale(1.1); /* Efecto de escala al pasar el ratón */
 }
 
+/* Responsividad */
+@media (max-width: 768px) {
+    #proyectos .fila {
+        justify-content: center; /* Centra los proyectos en pantallas pequeñas */
+    }
+
+    #proyectos .fila .proyecto {
+        max-width: 45%; /* Aumenta el ancho de los proyectos para ajustarlos mejor */
+    }
+}
+
+@media (max-width: 480px) {
+    #proyectos .fila .proyecto {
+        max-width: 90%; /* Los proyectos ocupan casi todo el ancho */
+    }
+
+    #proyectos .titulo-seccion {
+        font-size: 28px; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+}
         
         
         
