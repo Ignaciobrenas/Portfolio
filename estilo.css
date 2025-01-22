@@ -273,8 +273,8 @@
 }
 
 #inicio .contenido .presentacion h2 span:hover {
-    transform: scale(1.5);
-    color: #88ff00;
+    transform: scale(1.7);
+    color: #0189f9;
 }
 
 #inicio .contenido .presentacion .descripcion {
