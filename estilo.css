@@ -260,21 +260,22 @@
     letter-spacing: 5px;
 }
 
+#inicio .contenido .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
 #inicio .contenido .presentacion h2 span {
-    font-size: clamp(32px, 5vw, 50px); /* Tamaño de fuente adaptable */
-    color: var(--primary-color, #0078D7); /* Usar variables para mayor flexibilidad */
-    font-weight: 600; /* Aumentar peso de la fuente */
-    line-height: 1.2; /* Mejora la legibilidad */
-    letter-spacing: 0.5px; /* Ajuste sutil del espacio entre letras */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Agregar sombra para destacar el texto */
-    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave al interactuar */
+    font-size: 50px;
+    color: #0078D7;
+    transition: all 0.3s ease;
 }
 
 #inicio .contenido .presentacion h2 span:hover {
-    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
-    color: var(--accent-color, #005fa3); /* Cambiar el color al pasar el ratón */
+    transform: scale(1.5);
+    color: #88ff00;
 }
-
 
 #inicio .contenido .presentacion .descripcion {
     max-width: 700px;
