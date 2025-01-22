@@ -19,6 +19,7 @@ height: auto;
         
        /* seccion I N I C I O */
 /* *********************/
+
 #inicio {
     background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("img/fondo-inicio.jpg");
     background-size: cover;
@@ -34,6 +35,23 @@ height: auto;
     100% {
         opacity: 1;
     }
+}
+
+.bandera-boton {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.bandera-boton img {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    border-radius: 50%; /* Hace que la bandera sea circular */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.bandera-boton img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
 }
 
 #inicio .contenido header {
@@ -74,8 +92,8 @@ height: auto;
     0% {
         opacity: 0;
     }
-    100% {
-        opacity: 1;
+    1000% {
+        opacity: 0,5;
     }
 }
 
@@ -628,6 +646,7 @@ height: auto;
 
 /* Contenedor principal con diseño de grid */
 .experiencia-container {
+    background: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
     gap: 20px; /* Espacio entre las tarjetas */
@@ -640,7 +659,7 @@ height: auto;
 
 /* Estilo de cada tarjeta */
 .experiencia {
-    position: relative; /* Para posicionar la superposición correctamente */
+    position: center; /* Para posicionar la superposición correctamente */
     display: flex;
     justify-content: center; /* Centrado horizontal interno */
     align-items: center; /* Centrado vertical interno */
@@ -788,7 +807,7 @@ height: auto;
 }
 
 .close {
-    color: #ff4d4d; /* Color rojo vibrante para el botón de cerrar */
+    color: #530000; /* Color rojo vibrante para el botón de cerrar */
     float: right;
     font-size: 32px;
     font-weight: bold;
@@ -797,7 +816,7 @@ height: auto;
 
 .close:hover,
 .close:focus {
-    color: #ff1a1a; /* Rojo más oscuro al pasar el ratón */
+    color: #5d0000; /* Rojo más oscuro al pasar el ratón */
     cursor: pointer;
     transform: scale(1.2); /* Aumenta ligeramente el tamaño del ícono */
 }
@@ -855,7 +874,7 @@ height: auto;
     max-width: 1100px;
     padding: 100px 15px;
     margin: auto;
-    background-color: #f3f3f3; /* Fondo suave para la sección */
+    background-color: #ffffff43; /* Fondo suave para la sección */
     border-radius: 10px;
 }
 

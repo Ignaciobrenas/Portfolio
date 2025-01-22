@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/logo-ignacioweb.png" type="image/x-icon">
+    <title>Ignacio Breñas</title>
+</head>
+
+<body>
+    <!-- S T A R T -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>
+                        <a href="#inicio">
+                            <img src="img/logo-ignacioweb.png" alt="Ignacio Breñas Logo" class="logo">
+                        </a>
+                    </h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">HOME</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">ABOUT ME</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICES</a></li>
+                            <li><a href="#experiencia" onclick="seleccionar(this)">EXPERIENCE</a></li>
+                            <li><a href="#Formación_academica" onclick="seleccionar(this)">ACADEMIC TRAINING</a></li>
+                            <li><a href="#proyectos" onclick="seleccionar(this)">PROJECTS</a></li>
+                        </ul>
+                    </nav>
+                
+                    <!-- Responsive menu icon -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/ignacio-breñas-muñoz-02a90b218/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Ignaciobrenas"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="bandera-boton">
+                        <a href="index.html" title="Go to another page">
+                            <img src="img/flag-england.png" alt="England Flag" class="bandera">
+                        </a>
+                    </div>
+                </div>
+                
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Hello!</p>
+                <h2>I am <span>Ignacio Breñas</span></h2>
+                <p class="descripcion">Web Developer --- IT Technician</p>
+                <a href="/img/CURRICULUM%20IGNACIO%20BREÑAS%20MUÑOZ.pdf" download>Download CV</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+
+    <!-- SECCION S O B R E M I -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MY SERVICES</h3>
+        <div class="fila">
+            <!-- Web Development -->
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Web Development</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li><i class="fa-brands fa-html5"></i> HTML</li>
+                    <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                    <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                </ul>
+                <p>Creation of dynamic and engaging websites using modern technologies.</p>
+            </div>
+            
+            <!-- Databases -->
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Databases</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li><i class="fa-brands fa-microsoft"></i> SQL</li>
+                    <li><i class="fa-brands fa-microsoft"></i> Access</li>
+                    <li><i class="fa-brands fa-php"></i> Php</li>
+                </ul>
+                <p>Management and maintenance of databases for various projects.</p>
+            </div>
+            
+            <!-- Programming -->
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Programming</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li><i class="fa-brands fa-python"></i> Python</li>
+                    <li><i class="fa-brands fa-c"></i> C</li>
+                </ul>
+                <p>Development and optimization of software in various programming languages.</p>
+            </div>
+        </div>
+    
+        <div class="fila">
+            <!-- Virtualization -->
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-server"></i></span>
+                <h4>Virtualization</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li><i class="fa-brands fa-vmware"></i> VMware</li>
+                    <li><i class="fa-brands fa-virtualbox"></i> VirtualBox</li>
+                </ul>
+                <p>I manage virtual machines with ease.</p>
+            </div>
+    
+            <!-- Applications -->
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-pencil-ruler"></i></span>
+                <h4>Applications</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li><i class="fa-brands fa-adobe"></i> Photoshop</li>
+                    <li><i class="fa-brands fa-adobe"></i> Illustrator</li>
+                    <li><i class="fa-brands fa-adobe"></i> InDesign</li>
+                </ul>
+                <hr>
+                <ul class="servicios-tag">
+                    <li><i class="fa-brands fa-microsoft"></i> Word</li>
+                    <li><i class="fa-brands fa-microsoft"></i> Excel</li>
+                    <li><i class="fa-brands fa-microsoft"></i> PowerPoint</li>
+                </ul>
+                <hr>
+                <ul class="servicios-tag">
+                    <li><i class="fa-brands fa-google-drive"></i> Drive</li>
+                    <li><i class="fa-brands fa-microsoft-onedrive"></i> OneDrive</li>
+                    <li><i class="fa-brands fa-dropbox"></i> Dropbox</li>
+                </ul>
+                <p>I am proficient with Adobe Suite, collaborative applications like Drive, OneDrive, and Dropbox, as well as efficient document management.</p>
+            </div>
+    
+            <!-- Operating Systems -->
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-laptop"></i></span>
+                <h4>Operating Systems</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li><i class="fa-brands fa-windows"></i> Windows</li>
+                    <li><i class="fa-brands fa-linux"></i> Linux</li>
+                    <li><i class="fa-brands fa-apple"></i> Mac</li>
+                </ul>
+                <p>I offer installation, maintenance, and repair services for both software and hardware.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECTION E X P E R I E N C E -->
+    <section id="experiencia"> 
+        <h3 class="titulo-seccion">Experience</h3>
+        <div class="experiencia-container">
+    
+            <div class="experiencia">
+                <div class="overlay"></div>
+                <img src="img/Logo.Vimtech.png" alt="Experience at VimTech">
+                <div class="info">
+                    <button class="btn-info" onclick="abrirModal('modal')">Learn More</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal('modal')">&times;</span>
+                <h3>Internship at VimTech</h3>
+                <p><strong>Period:</strong> September 2024 - March 2025</p>
+                <p><strong>Location:</strong> Carrer Brasil 17, El Masnou</p>
+                <p><strong>Responsibilities:</strong></p>
+                <ul>
+                    <li>Diagnosis and repair of Apple devices</li>
+                    <li>Maintenance of computer equipment</li>
+                    <li>Installation of operating systems and software</li>
+                    <li>Replacement of damaged components</li>
+                    <li>Personalized customer support with technological solutions</li>
+                </ul>
+                <p><strong>Specialization:</strong> IT services for Apple devices</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- EXPERIENCE SECTION -->
+    <section id="Formación_academica">
+        <h3 class="titulo-seccion">Academic Education</h3>
+    
+        <div class="experiencia-container">
+            <div class="experiencia">
+                <div class="overlay"></div>
+                <img src="img/Logo.stucom.png" alt="Experience at VimTech">
+                <div class="info">
+                    <button class="btn-info" onclick="abrirModal('modal2')">Learn More</button>
+                </div>
+            </div>
+    
+            <div class="experiencia">
+                <div class="overlay"></div>
+                <img src="img/Logo.stucom.png" alt="Experience at VimTech">
+                <div class="info">
+                    <button class="btn-info" onclick="abrirModal('modal3')">Learn More</button>
+                </div>
+            </div>
+    
+            <div class="experiencia">
+                <div class="overlay"></div>
+                <img src="img/Logo.pedroches.png" alt="Experience at VimTech">
+                <div class="info">
+                    <button class="btn-info" onclick="abrirModal('modal4')">Learn More</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Modal -->
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal('modal2')">&times;</span>
+                <h3>High Vocational Training in Web Application Development</h3>
+                <p><strong>Period:</strong> September 2025 - June 2027</p>
+                <p><strong>Study Center:</strong> STUCOM Pelai</p>
+                <p><strong>Location:</strong> Barcelona (Barcelona)</p>
+                <p>Training focused on designing, developing, and implementing web applications, 
+                   working with frontend, backend technologies, and databases.</p>
+            </div>
+        </div>
+    
+        
+        
+        <!-- Modal -->
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal('modal3')">&times;</span>
+                <h3>Low Vocational Training in Microcomputer Systems and Networks</h3>
+                <p><strong>Period:</strong> September 2023 - June 2025</p>
+                <p><strong>Study Center:</strong> STUCOM Pelai</p>
+                <p><strong>Location:</strong> Barcelona (Barcelona)</p>
+                <p><strong>Responsibilities:</strong></p>
+                <ul>
+                    <li>Installing, configuring, and maintaining operating systems</li>
+                    <li>Installing, verifying, maintaining, and repairing local networks</li>
+                    <li>Assembling, repairing, and upgrading microcomputer equipment</li>
+                    <li>Installing, configuring, and maintaining general-purpose and specific applications</li>
+                    <li>Providing technical user support (HELPDESK)</li>
+                    <li>Robotics fundamentals with ARDUINO</li>
+                    <li>Programming fundamentals (HTML, CSS, JavaScript,...)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal('modal4')">&times;</span>
+                <h3>Compulsory Secondary Education (ESO)</h3>
+                <p><strong>Period:</strong> September 2017 - June 2021</p>
+                <p><strong>Study Center:</strong> IES Los Pedroches</p>
+                <p><strong>Location:</strong> Pozoblanco (Córdoba)</p>
+                <p>Mandatory educational stage in Spain providing basic knowledge 
+                   and general competencies to continue studies or enter the workforce.</p>
+            </div>
+        </div>
+    </section>
+    ```
+   <!-- PORTFOLIO SECTION -->
+<section id="proyectos">
+    <h3 class="titulo-seccion">My Projects</h3>
+    <div class="fila">
+        <!-- Project 1 -->
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto1.jpg" alt="Project 1">
+            <div class="info">
+                <h4>PROJECT 1</h4>
+                <a href="proyecto1.html" class="btn-info">More Information</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto2.jpg" alt="Project 2">
+            <div class="info">
+                <h4>PROJECT 2</h4>
+                <a href="proyecto2.html" class="btn-info">More Information</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto3.jpg" alt="Project 3">
+            <div class="info">
+                <h4>PROJECT 3</h4>
+                <a href="proyecto3.html" class="btn-info">More Information</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fila">
+        <!-- Project 4 -->
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto4.jpg" alt="Project 4">
+            <div class="info">
+                <h4>PROJECT 4</h4>
+                <a href="proyecto4.html" class="btn-info">More Information</a>
+            </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto5.jpg" alt="Project 5">
+            <div class="info">
+                <h4>PROJECT 5</h4>
+                <a href="proyecto5.html" class="btn-info">More Information</a>
+            </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto6.jpg" alt="Project 6">
+            <div class="info">
+                <h4>PROJECT 6</h4>
+                <a href="proyecto6.html" class="btn-info">More Information</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="fila">
+        <!-- Project 7 -->
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto7.jpg" alt="Project 7">
+            <div class="info">
+                <h4>PROJECT 7</h4>
+                <a href="proyecto7.html" class="btn-info">More Information</a>
+            </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto8.jpg" alt="Project 8">
+            <div class="info">
+                <h4>PROJECT 8</h4>
+                <a href="proyecto8.html" class="btn-info">More Information</a>
+            </div>
+        </div>
+
+        <!-- Project 9 -->
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto9.jpg" alt="Project 9">
+            <div class="info">
+                <h4>PROJECT 9</h4>
+                <a href="proyecto9.html" class="btn-info">More Information</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>IgnacioBooff 2024</p>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/ignacio-breñas-muñoz-02a90b218/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Ignaciobrenas"><i class="fa-brands fa-github"></i></a>
+        </div>
+        
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
