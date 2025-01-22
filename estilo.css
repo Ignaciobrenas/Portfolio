@@ -9,13 +9,51 @@
         html {
             scroll-behavior: smooth;
         }
-        /* *********************/
-        /* seccion I N I C I O */
-        /* *********************/
-.logo {
-max-width: 100px; /* Ajusta el tamaño según sea necesario */
-height: auto;
-     }
+
+        .logo {
+            max-width: 100%; /* Hace que la imagen se ajuste automáticamente al contenedor */
+            height: auto;    /* Mantiene la proporción de la imagen */
+            width: auto;     /* Asegura que no se distorsione en pantallas más grandes */
+            max-height: 100px; /* Limita la altura máxima para asegurar que no sea demasiado grande */
+            object-fit: contain; /* Asegura que la imagen no se distorsione y se ajuste dentro del espacio disponible */
+            
+            /* Animaciones */
+            opacity: 0;  /* Inicia con opacidad cero */
+            transform: scale(0.8); /* Inicia con un tamaño reducido */
+            animation: fadeIn 1s ease-out forwards, scaleIn 1s ease-out forwards; /* Animaciones de entrada */
+        }
+        
+        /* Animación de opacidad */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        /* Animación de escala */
+        @keyframes scaleIn {
+            0% {
+                transform: scale(0.8);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        /* Animación para cambios de tamaño */
+        @media screen and (max-width: 600px) {
+            .logo {
+                transition: transform 0.5s ease, opacity 0.5s ease;
+            }
+            .logo:hover {
+                transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+                opacity: 0.8; /* Reduce la opacidad */
+            }
+        }
+        
         
        /* seccion I N I C I O */
 /* *********************/
@@ -71,7 +109,6 @@ height: auto;
         transform: translateY(0);
     }
 }
-
 #inicio .contenido header .contenido-header {
     max-width: 1100px;
     margin: auto;
@@ -92,8 +129,8 @@ height: auto;
     0% {
         opacity: 0;
     }
-    1000% {
-        opacity: 0,5;
+    100% {
+        opacity: 1; /* Corrigiendo el valor de opacidad */
     }
 }
 
@@ -193,9 +230,6 @@ height: auto;
     transform-origin: bottom left;
 }
 
-
-
-
 @keyframes pulseEffect {
     0% {
         transform: scale(1);
@@ -208,65 +242,69 @@ height: auto;
     }
 }
 
+#inicio .contenido .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-        
-        #inicio .contenido .presentacion {
-            max-width: 1100px;
-            height: 100vh;
-            margin: auto;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        #inicio .contenido .presentacion .bienvenida {
-            font-size: 16px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-        }
-        
-        #inicio .contenido .presentacion h2 {
-            font-size: 55px;
-            margin-bottom: 25px;
-            text-align: center;
-        }
-        
-        #inicio .contenido .presentacion h2 span {
-            font-size: 50px;
-            color: #0078D7;
-        }
-        
-        #inicio .contenido .presentacion .descripcion {
-            max-width: 700px;
-            margin: 25px auto;
-            font-size: 18px;
-            text-align: center;
-        }
-        
-        #inicio .contenido .presentacion a {
-            text-decoration: none;
-            display: inline-block;
-            margin: 25px;
-            padding: 20px 25px;
-            border: 2px solid #fff;
-            border-radius: 50px;
-            color: #fff;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: .5s;
-        }
-        
-        #inicio .contenido .presentacion a:hover {
-            background-color: #0078D7;
-        }
-        
-        #icono-nav {
-            color: #fff;
-            display: none;
-        }
+#inicio .contenido .presentacion .bienvenida {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span {
+    font-size: 50px;
+    color: #0078D7;
+    transition: all 0.3s ease;
+}
+
+#inicio .contenido .presentacion h2 span:hover {
+    transform: scale(1.5);
+    color: #88ff00;
+}
+
+#inicio .contenido .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#inicio .contenido .presentacion a:hover {
+    background-color: #0078D7;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
+}
 
         /* *********************/
         /* seccion S O B R E  M I */
@@ -629,7 +667,7 @@ height: auto;
 }
 
 
-
+       
         /* *********************/
         /* seccion S K I L L S */
       /* Contenedor para la fila de experiencias */
@@ -646,7 +684,6 @@ height: auto;
 
 /* Contenedor principal con diseño de grid */
 .experiencia-container {
-    background: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
     gap: 20px; /* Espacio entre las tarjetas */
@@ -659,7 +696,7 @@ height: auto;
 
 /* Estilo de cada tarjeta */
 .experiencia {
-    position: center; /* Para posicionar la superposición correctamente */
+    position: relative; /* Para posicionar la superposición correctamente */
     display: flex;
     justify-content: center; /* Centrado horizontal interno */
     align-items: center; /* Centrado vertical interno */
@@ -777,80 +814,33 @@ height: auto;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro más opaco */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro más opaco */
     padding-top: 60px;
-    animation: fadeInModal 0.5s ease-in-out; /* Efecto de entrada del modal */
-}
-
-/* Efecto de fade-in para el modal */
-@keyframes fadeInModal {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
 }
 
 .modal-content {
-    background-color: #fff;
-    margin: 10% auto;
-    padding: 30px;
-    border-radius: 12px;
-    width: 60%;
-    max-width: 800px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    border: none;
-    animation: modalSlideIn 0.5s ease-out;
-}
-
-/* Efecto de deslizamiento para el contenido del modal */
-@keyframes modalSlideIn {
-    0% { transform: translateY(-50px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+    animation: modalFadeIn 0.5s ease; /* Añade animación */
 }
 
 .close {
-    color: #530000; /* Color rojo vibrante para el botón de cerrar */
+    color: #aaa;
     float: right;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
-    transition: color 0.3s ease; /* Transición suave al pasar el ratón */
 }
 
 .close:hover,
 .close:focus {
-    color: #5d0000; /* Rojo más oscuro al pasar el ratón */
+    color: black;
+    text-decoration: none;
     cursor: pointer;
-    transform: scale(1.2); /* Aumenta ligeramente el tamaño del ícono */
 }
-
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.modal-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-}
-
-.modal-body {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #555;
-}
-
-/* Fondo del modal */
-.modal-content {
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.modal-footer {
-    text-align: right;
-    margin-top: 20px;
-}
-
 
 /* Animación para el modal */
 @keyframes modalFadeIn {
@@ -874,7 +864,7 @@ height: auto;
     max-width: 1100px;
     padding: 100px 15px;
     margin: auto;
-    background-color: #ffffff43; /* Fondo suave para la sección */
+    background-color: #f3f3f3; /* Fondo suave para la sección */
     border-radius: 10px;
 }
 
@@ -986,26 +976,6 @@ height: auto;
     transform: scale(1.1); /* Efecto de escala al pasar el ratón */
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-    #proyectos .fila {
-        justify-content: center; /* Centra los proyectos en pantallas pequeñas */
-    }
-
-    #proyectos .fila .proyecto {
-        max-width: 45%; /* Aumenta el ancho de los proyectos para ajustarlos mejor */
-    }
-}
-
-@media (max-width: 480px) {
-    #proyectos .fila .proyecto {
-        max-width: 90%; /* Los proyectos ocupan casi todo el ancho */
-    }
-
-    #proyectos .titulo-seccion {
-        font-size: 28px; /* Reduce el tamaño del título en pantallas pequeñas */
-    }
-}
         
         
         
