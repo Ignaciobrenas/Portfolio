@@ -1086,24 +1086,56 @@
         width: 100%;
     }
 }
+/* Sección de Contacto */
 .contacto {
     max-width: 1100px;
     margin: 50px auto;
     text-align: center;
     color: #fff;
+    background-color: #f3f3f3; /* Fondo suave para la sección */
+    border-radius: 10px;
+    padding: 60px 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra general */
 }
 
+/* Título de la sección */
 .contacto h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
-    color: #0078D7;
+    font-size: 36px; /* Tamaño grande para resaltar */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #0078D7;
+    text-decoration-thickness: 6px; /* Aumento del grosor del subrayado */
+    margin-bottom: 20px;
+    
+    /* Sombra para dar profundidad */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.15);
+    
+    /* Animación de aparición */
+    animation: fadeInTitle 1s ease-out;
 }
 
+/* Animación de aparición para el título */
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Inicia desde abajo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Llega a la posición final */
+    }
+}
+
+/* Párrafo de la sección */
 .contacto p {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    color: #666;
 }
 
+/* Botón de contacto */
 .boton-contacto {
     text-decoration: none;
     display: inline-block;
@@ -1112,16 +1144,15 @@
     color: #fff;
     font-weight: bold;
     border-radius: 30px;
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
+/* Efecto hover sobre el botón */
 .boton-contacto:hover {
     background-color: #005bb5;
     transform: scale(1.1);
 }
 
-        
-       
         /* *********************/
         /* seccion F O O T E R */
         /* *********************/
