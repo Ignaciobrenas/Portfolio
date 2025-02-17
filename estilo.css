@@ -742,7 +742,7 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
     padding: 10px;
 }
@@ -856,32 +856,34 @@
 
 
         
-        /* *********************/
-        /* seccion Proyectos
-        /* *********************/
-       /* Sección de Proyectos */
+      /* *********************/
+/* seccion Proyectos   */
+/* *********************/
+
+/* Sección de Proyectos */
 #proyectos {
     max-width: 1100px;
-    padding: 100px 15px;
+    padding: 80px 15px;
     margin: auto;
     background-color: #f3f3f3; /* Fondo suave para la sección */
     border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra general */
 }
 
 /* Título de la sección */
 #proyectos .titulo-seccion {
     text-align: center;
-    font-size: 32px; /* Aumento de tamaño para un impacto visual mayor */
+    font-size: 36px; /* Mayor tamaño para mayor impacto */
     font-weight: bold; /* Añadido para que el título tenga más fuerza */
     text-transform: uppercase;
     color: #111135;
     text-decoration: underline;
     text-decoration-color: #0078D7; /* Color del subrayado ajustado */
     text-decoration-thickness: 6px; /* Aumento del grosor del subrayado para mayor visibilidad */
-    margin-bottom: 50px; /* Más espacio en la parte inferior */
+    margin-bottom: 40px; /* Más espacio en la parte inferior */
     
     /* Sombra para dar profundidad */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.15); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.15);
     
     /* Animación de aparición */
     animation: fadeInTitle 1s ease-out;
@@ -899,18 +901,18 @@
     }
 }
 
-
 /* Fila de proyectos */
 #proyectos .fila {
     display: flex;
+    flex-wrap: wrap; /* Permitir el wrap de proyectos */
     justify-content: space-between;
-    gap: 30px; /* Mejora el espaciado entre los proyectos */
+    gap: 20px; /* Mejora el espaciado entre los proyectos */
     margin: 30px 0;
 }
 
 /* Proyecto individual */
 #proyectos .fila .proyecto {
-    max-width: 32%; /* Asegura que tres proyectos quepan bien en una fila */
+    flex: 1 1 calc(33.333% - 20px); /* Ajuste para 3 columnas con gap */
     border: 1px solid #0078D7;
     border-radius: 10px; /* Bordes redondeados */
     position: relative;
@@ -922,11 +924,10 @@
 /* Imagen del proyecto */
 #proyectos .fila .proyecto img {
     width: 100%;
-    height: 100%;
+    height: 400px; /* Altura fija para uniformidad */
     object-fit: cover;
     filter: grayscale(100%);
-    transition: filter 0.3s ease-in-out; /* Transición suave para el cambio de filtro */
-    border-bottom: 2px solid #0078D7; /* Línea sutil debajo de la imagen */
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transición suave para el cambio de filtro */
 }
 
 /* Efecto hover en la imagen */
@@ -976,8 +977,149 @@
     transform: scale(1.1); /* Efecto de escala al pasar el ratón */
 }
 
-        
-        
+/* Responsiveness */
+@media (max-width: 768px) {
+    #proyectos .fila .proyecto {
+        flex: 1 1 calc(50% - 20px); /* Ajuste a 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    #proyectos .fila .proyecto {
+        flex: 1 1 100%; /* Ajuste a 1 columna en móviles */
+    }
+}
+/* Sección de Proyectos */
+#proyectos {
+    max-width: 1200px;
+    padding: 60px 15px;
+    margin: auto;
+    background-color: #c7c3e60f; /* Fondo blanco para un diseño limpio */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Proyecto */
+.proyecto {
+    margin: 40px 0;
+}
+
+/* Contenido del Proyecto */
+.proyecto .contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Imagen */
+.proyecto img {
+    width: 50%;
+    height: auto; /* Ajuste de altura automática */
+    object-fit: cover;
+    border-radius: 15px 0 0 15px; /* Bordes redondeados en las esquinas izquierdas */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Texto */
+.proyecto .texto {
+    padding: 30px;
+    width: 50%;
+    text-align: left;
+}
+
+/* Título */
+.proyecto h4 {
+    font-size: 24px; /* Tamaño del título */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Resumen */
+.proyecto p {
+    font-size: 16px; /* Tamaño del texto */
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Botón de Información */
+.btn-info {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 25px; /* Botones más redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover en el Proyecto */
+.proyecto:hover .contenido {
+    transform: scale(1.05);
+}
+
+/* Hover en el Botón */
+.btn-info:hover {
+    background-color: #005bb5;
+    transform: scale(1.1);
+}
+
+/* Inverso para Proyectos Pares */
+.proyecto .contenido.inverso {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .proyecto .contenido {
+        flex-direction: column;
+    }
+    .proyecto .contenido.inverso {
+        flex-direction: column;
+    }
+    .proyecto img, .proyecto .texto {
+        width: 100%;
+    }
+}
+.contacto {
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: center;
+    color: #fff;
+}
+
+.contacto h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #0078D7;
+}
+
+.contacto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.boton-contacto {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #0078D7;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: .3s ease;
+}
+
+.boton-contacto:hover {
+    background-color: #005bb5;
+    transform: scale(1.1);
+}
+
         
        
         /* *********************/
