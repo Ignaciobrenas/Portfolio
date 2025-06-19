@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ignacio Breñas Portfolio - Web Developer and IT Technician specialized in Front-end, Databases and Systems">
+    <meta name="keywords" content="web developer, IT technician, HTML, CSS, JavaScript, SQL, Barcelona">
+    <meta name="author" content="Ignacio Breñas">
+    <title>Ignacio Breñas - Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img\logo.png" type="image/png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-decoration"></div>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <img src="img\logo.png" alt="Ignacio Breñas Logo" class="logo" width="150" height="50">
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="social-links-header">
+                <a href="https://www.linkedin.com/in/ignacio-breñas-muñoz-02a90b218/" target="_blank" rel="noopener noreferrer" aria-label="Ignacio Breñas LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ignaciobrenas" target="_blank" rel="noopener noreferrer" aria-label="Ignacio Breñas GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="index.html" title="Spanish version" aria-label="Spanish version of the website">
+                    <img src="img/flag-uk.jpg" alt="UK Flag - English version" class="flag" width="24" height="16">
+                </a>
+            </div>
+            <div class="mobile-menu" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Hello, welcome to my portfolio!</p>
+                <h1>I'm <span class="highlight">Ignacio Breñas</span></h1>
+                <p class="hero-description">Web Developer & IT Technician</p>
+                <div class="hero-cta">
+                    <a href="img/CURRICULUM%20IGNACIO%20BREÑAS%20MUÑOZ%20EN.pdf" download class="btn btn-primary">
+                        Download CV <i class="fas fa-download" aria-hidden="true"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Contact <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ignacio-breñas-muñoz-02a90b218/" target="_blank" rel="noopener noreferrer" aria-label="Ignacio Breñas LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Ignaciobrenas" target="_blank" rel="noopener noreferrer" aria-label="Ignacio Breñas GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="img/foto.jpg" alt="Photo of Ignacio Breñas" width="300" height="300">
+                </div>
+                <div class="about-content">
+                    <div class="card">
+                        <h3 class="about-subtitle">Hello, I'm <span class="highlight">Ignacio Breñas</span></h3>
+                        <p class="about-text">20 years old | Web Developer & IT Technician</p>
+                        <p class="about-text">I'm currently a higher education student in Web Application Development with a passion for technology and developing digital solutions.</p>
+                        <p class="about-text">I consider myself a competitive person willing to work as a team, eager to improve and gain experience in the technology sector.</p>
+                        <p class="about-text">My goal is to continue developing my skills in web development and programming, while gaining experience to contribute to innovative projects that generate positive impact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-file-code" aria-hidden="true"></i></div>
+                    <h3>Web Development</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</span>
+                        <span class="skill-tag"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</span>
+                    </div>
+                    <p>Creation of dynamic and attractive websites using modern technologies and good development practices.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+                    <h3>Databases</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-solid fa-table" aria-hidden="true"></i> SQL</span>
+                        <span class="skill-tag"><i class="fa-brands fa-microsoft" aria-hidden="true"></i> Access</span>
+                        <span class="skill-tag"><i class="fa-brands fa-php" aria-hidden="true"></i> PHP</span>
+                    </div>
+                    <p>Management and maintenance of relational databases for different types of projects and applications.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+                    <h3>Programming</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-brands fa-python" aria-hidden="true"></i> Python</span>
+                        <span class="skill-tag"><i class="fa-solid fa-c" aria-hidden="true"></i> C</span>
+                    </div>
+                    <p>Development and optimization of software in various programming languages adapted to specific needs.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div>
+                    <h3>Virtualization</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-solid fa-cube" aria-hidden="true"></i> VMware</span>
+                        <span class="skill-tag"><i class="fa-solid fa-box" aria-hidden="true"></i> VirtualBox</span>
+                    </div>
+                    <p>Efficient management of virtualized environments to optimize resources and ensure service availability.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-pencil-ruler" aria-hidden="true"></i></div>
+                    <h3>Software</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-brands fa-adobe" aria-hidden="true"></i> Adobe Creative Suite</span>
+                        <span class="skill-tag"><i class="fa-brands fa-microsoft" aria-hidden="true"></i> Office 365</span>
+                        <span class="skill-tag"><i class="fa-solid fa-cloud" aria-hidden="true"></i> Cloud Services</span>
+                    </div>
+                    <p>Advanced mastery of productivity, design and collaboration tools to optimize workflows.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-laptop" aria-hidden="true"></i></div>
+                    <h3>Operating Systems</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-brands fa-windows" aria-hidden="true"></i> Windows</span>
+                        <span class="skill-tag"><i class="fa-brands fa-linux" aria-hidden="true"></i> Linux</span>
+                        <span class="skill-tag"><i class="fa-brands fa-apple" aria-hidden="true"></i> macOS</span>
+                    </div>
+                    <p>Installation, maintenance and specialized technical support for different operating systems and hardware components.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <img src="img/Logo.Vimtech.png" alt="VimTech Logo" class="company-logo" width="120" height="80">
+                                <div class="experience-info">
+                                    <h3>IT Technician Intern</h3>
+                                    <h4>VimTech</h4>
+                                    <p class="experience-period">September 2024 - March 2025</p>
+                                    <p class="experience-location"><i class="fas fa-map-marker-alt"></i> Carrer Brasil 17, El Masnou</p>
+                                </div>
+                            </div>
+                            <div class="experience-body">
+                                <h4>Responsibilities:</h4>
+                                <ul class="experience-list">
+                                    <li>Diagnosis and repair of Apple devices</li>
+                                    <li>Preventive and corrective maintenance of computer equipment</li>
+                                    <li>Installation and configuration of operating systems and software</li>
+                                    <li>Replacement of damaged components and hardware upgrades</li>
+                                    <li>Customer service and personalized technical advice</li>
+                                </ul>
+                                <p><strong>Specialization:</strong> Technical service for Apple devices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-button-container">
+                <a href="#contact" class="contact-button">
+                    Your company could be next, contact me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Academic Background</h2>
+            <div class="education-timeline">
+                <!-- Education 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <img src="img/Logo.stucom.png" alt="STUCOM Logo" class="institution-logo" width="120" height="80">
+                                <div class="education-info">
+                                    <h3>Higher Degree in Web Application Development</h3>
+                                    <h4>STUCOM Pelai</h4>
+                                    <p class="education-period">2025 - Present</p>
+                                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Barcelona</p>
+                                </div>
+                            </div>
+                            <div class="education-body">
+                                <p>Specialized training in the design, development and implementation of web applications, acquiring competencies in:</p>
+                                <ul class="education-list">
+                                    <li>Frontend Development (HTML5, CSS3, JavaScript)</li>
+                                    <li>Backend Development (PHP, Java)</li>
+                                    <li>Database management</li>
+                                    <li>Modern frameworks and libraries</li>
+                                    <li>Application deployment and maintenance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <img src="img/Logo.stucom.png" alt="STUCOM Logo" class="institution-logo" width="120" height="80">
+                                <div class="education-info">
+                                    <h3>Mid-Level Degree in Microcomputer Systems and Networks</h3>
+                                    <h4>STUCOM Pelai</h4>
+                                    <p class="education-period">2023 - 2025</p>
+                                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Barcelona</p>
+                                </div>
+                            </div>
+                            <div class="education-body">
+                                <p>Technical training in installation, configuration and maintenance of computer systems and networks:</p>
+                                <ul class="education-list">
+                                    <li>Operating systems administration</li>
+                                    <li>Configuration and maintenance of local networks</li>
+                                    <li>Assembly and repair of computer equipment</li>
+                                    <li>Programming fundamentals</li>
+                                    <li>Technical support to users</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <img src="img/Logo.pedroches.png" alt="IES Los Pedroches Logo" class="institution-logo" width="120" height="80">
+                                <div class="education-info">
+                                    <h3>Compulsory Secondary Education (ESO)</h3>
+                                    <h4>IES Los Pedroches</h4>
+                                    <p class="education-period">2017 - 2021</p>
+                                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Pozoblanco (Córdoba)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-category="game">
+                    <div class="project-image">
+                        <img src="img/proyecto1.png" alt="Tic Tac Toe" width="400" height="300">
+                        <div class="project-links">
+                            <a href="https://github.com/Ignaciobrenas/" target="_blank" class="project-link" aria-label="View code on GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="/3 EN RAYA/indexX-O.html" class="project-link" aria-label="View project demo">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tic Tac Toe</h3>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <p class="project-description">Classic tic-tac-toe game for two players. Simple and dynamic interface with winner validation and automatic restart.</p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>March 2025</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fa-solid fa-code-branch"></i>
+                                <span>Individual</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            
+                <!-- Project 2 -->
+                <article class="project-card" data-category="app">
+                    <div class="project-image">
+                        <img src="/img/logoCLIMATIK.png" alt="Climatik - Weather App" width="400" height="300">
+                        <div class="project-links">
+                            <a href="https://github.com/Ignaciobrenas/" target="_blank" class="project-link" aria-label="View code on GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="/Climatik/index.html" class="project-link" aria-label="View project demo">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Climatik</h3>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <p class="project-description">Application to check current weather and forecasts with real-time data, responsive design and integration with weather APIs.</p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>January 2025</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fa-solid fa-code-branch"></i>
+                                <span>Team</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            
+                <!-- Project 3 -->
+                <article class="project-card" data-category="coming-soon">
+                    <div class="project-image">
+                        <img src="img/proximamente.png" alt="Coming Soon" width="400" height="300">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="Coming Soon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="Coming Soon">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Coming Soon</h3>
+                        <div class="project-tags">
+                            <span class="tag">---</span>
+                        </div>
+                        <p class="project-description">New project in development. More information will be available soon.</p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>2025</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fa-solid fa-code-branch"></i>
+                                <span>---</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="projects-cta">
+                <a href="https://github.com/Ignaciobrenas" target="_blank" class="btn btn-primary">
+                    View more projects on GitHub <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Interested in working together?</h3>
+                    <p>I'm available for freelance projects, professional internships and job opportunities. Get in touch with me through any of the following means:</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email</h4>
+                            <a href="mailto:ignaciobrenas@gmail.com">ignaciobrenas@gmail.com</a>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Location</h4>
+                            <p>Barcelona, Spain</p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/ignacio-breñas-muñoz-02a90b218/" target="_blank">Ignacio Breñas</a>
+                        </div>
+                    </div>
+                    
+                    <div class="email-buttons">
+                        <h4>Send me an email directly</h4>
+                        <div class="button-container">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ignaciobrenas@gmail.com&su=Contact from Web Portfolio" class="btn btn-email gmail" target="_blank">
+                                <i class="fa-brands fa-google"></i> Send with Gmail
+                            </a>
+                            <a href="https://outlook.office.com/mail/deeplink/compose?to=ignaciobrenas@gmail.com&subject=Contact from Web Portfolio" class="btn btn-email outlook" target="_blank">
+                                <i class="fa-brands fa-microsoft"></i> Send with Outlook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-image">
+                    <img src="img/contacto-ilustracion.svg" alt="Contact illustration" onerror="this.src='img\logo.png'; this.classList.add('fallback-img');">
+                    <div class="social-links contact-social">
+                        <a href="https://www.linkedin.com/in/ignacio-breñas-muñoz-02a90b218/" target="_blank" rel="noopener noreferrer" aria-label="Ignacio Breñas LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Ignaciobrenas" target="_blank" rel="noopener noreferrer" aria-label="Ignacio Breñas GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:ignaciobrenas@gmail.com" aria-label="Ignacio Breñas Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Ignacio Breñas</h3>
+                <p>Web Developer & IT Technician</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/ignacio-breñas-muñoz-02a90b218/" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ignaciobrenas" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:ignaciobrenas@gmail.com" 
+                   aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            
+            <p class="copyright">&copy; 2025 Ignacio Breñas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="Home" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
