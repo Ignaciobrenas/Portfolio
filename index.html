@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Ignacio Breñas - Desarrollador Web y Técnico Informático especializado en Front-end, Bases de Datos y Sistemas">
+    <meta name="keywords" content="desarrollador web, técnico informático, HTML, CSS, JavaScript, SQL, Barcelona">
+    <meta name="author" content="Ignacio Breñas">
+    <title>Ignacio Breñas - Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo-ignacioweb.png" type="image/png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-decoration"></div>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <img src="img/logo-ignacioweb.png" alt="Logo Ignacio Breñas" class="logo" width="150" height="50">
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+                <li><a href="#formacion" class="nav-link">Formación</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="social-links-header">
+                <a href="https://www.linkedin.com/in/ignacio-breñas-muñoz-02a90b218/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Ignacio Breñas">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ignaciobrenas" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Ignacio Breñas">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="index_eng.html" title="English version" aria-label="Versión en inglés del sitio web">
+                    <img src="img/flag-spain.jpg" alt="Bandera de España - Versión en español" class="flag" width="24" height="16">
+                </a>
+            </div>
+            <div class="mobile-menu" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="section hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle">¡Hola, bienvenido a mi portfolio!</p>
+                <h1>Soy <span class="highlight">Ignacio Breñas</span></h1>
+                <p class="hero-description">Desarrollador Web & Técnico Informático</p>
+                <div class="hero-cta">
+                    <a href="img/CURRICULUM%20IGNACIO%20BREÑAS%20MUÑOZ.pdf" download class="btn btn-primary">
+                        Descargar CV <i class="fas fa-download" aria-hidden="true"></i>
+                    </a>
+                    <a href="#contacto" class="btn btn-outline">
+                        Contactar <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ignacio-breñas-muñoz-02a90b218/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Ignacio Breñas">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Ignaciobrenas" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Ignacio Breñas">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre mí -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mi</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="img/foto.jpg" alt="Foto de Ignacio Breñas" width="300" height="300">
+                </div>
+                <div class="about-content">
+                    <div class="card">
+                        <h3 class="about-subtitle">Hola, Soy <span class="highlight">Ignacio Breñas</span></h3>
+                        <p class="about-text">19 años | Desarrollador Web & Técnico Informático</p>
+                        <p class="about-text">Actualmente soy estudiante de grado superior en Desarrollo de Aplicaciones Web con pasión por la tecnología y el desarrollo de soluciones digitales.</p>
+                        <p class="about-text">Me considero una persona competitiva y dispuesta a trabajar en equipo, con ganas de mejorar y ganar experiencia en el sector tecnológico.</p>
+                        <p class="about-text">Mi objetivo es seguir desarrollando mis habilidades en desarrollo web y programación, mientras adquiero experiencia para contribuir a proyectos innovadores que generen impacto positivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="section">
+        <div class="container">
+            <h2 class="section-title">Mis Servicios</h2>
+            <div class="grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-file-code" aria-hidden="true"></i></div>
+                    <h3>Desarrollo Web</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</span>
+                        <span class="skill-tag"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</span>
+                    </div>
+                    <p>Creación de sitios web dinámicos y atractivos utilizando tecnologías modernas y buenas prácticas de desarrollo.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+                    <h3>Bases de Datos</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-solid fa-table" aria-hidden="true"></i> SQL</span>
+                        <span class="skill-tag"><i class="fa-brands fa-microsoft" aria-hidden="true"></i> Access</span>
+                        <span class="skill-tag"><i class="fa-brands fa-php" aria-hidden="true"></i> PHP</span>
+                    </div>
+                    <p>Gestión y mantenimiento de bases de datos relacionales para diferentes tipos de proyectos y aplicaciones.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+                    <h3>Programación</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-brands fa-python" aria-hidden="true"></i> Python</span>
+                        <span class="skill-tag"><i class="fa-solid fa-c" aria-hidden="true"></i> C</span>
+                    </div>
+                    <p>Desarrollo y optimización de software en diversos lenguajes de programación adaptados a las necesidades específicas.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div>
+                    <h3>Virtualización</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-solid fa-cube" aria-hidden="true"></i> VMware</span>
+                        <span class="skill-tag"><i class="fa-solid fa-box" aria-hidden="true"></i> VirtualBox</span>
+                    </div>
+                    <p>Gestión eficiente de entornos virtualizados para optimizar recursos y asegurar la disponibilidad de servicios.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-pencil-ruler" aria-hidden="true"></i></div>
+                    <h3>Software</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-brands fa-adobe" aria-hidden="true"></i> Adobe Creative Suite</span>
+                        <span class="skill-tag"><i class="fa-brands fa-microsoft" aria-hidden="true"></i> Office 365</span>
+                        <span class="skill-tag"><i class="fa-solid fa-cloud" aria-hidden="true"></i> Servicios Cloud</span>
+                    </div>
+                    <p>Dominio avanzado de herramientas de productividad, diseño y colaboración para optimizar flujos de trabajo.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-laptop" aria-hidden="true"></i></div>
+                    <h3>Sistemas Operativos</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-brands fa-windows" aria-hidden="true"></i> Windows</span>
+                        <span class="skill-tag"><i class="fa-brands fa-linux" aria-hidden="true"></i> Linux</span>
+                        <span class="skill-tag"><i class="fa-brands fa-apple" aria-hidden="true"></i> macOS</span>
+                    </div>
+                    <p>Instalación, mantenimiento y soporte técnico especializado para diferentes sistemas operativos y componentes de hardware.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia -->
+    <section id="experiencia" class="section">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <img src="img/Logo.Vimtech.png" alt="Logo VimTech" class="company-logo" width="120" height="80">
+                                <div class="experience-info">
+                                    <h3>Técnico Informático en Prácticas</h3>
+                                    <h4>VimTech</h4>
+                                    <p class="experience-period">Septiembre 2024 - Marzo 2025</p>
+                                    <p class="experience-location"><i class="fas fa-map-marker-alt"></i> Carrer Brasil 17, El Masnou</p>
+                                </div>
+                            </div>
+                            <div class="experience-body">
+                                <h4>Responsabilidades:</h4>
+                                <ul class="experience-list">
+                                    <li>Diagnóstico y reparación de dispositivos Apple</li>
+                                    <li>Mantenimiento preventivo y correctivo de equipos informáticos</li>
+                                    <li>Instalación y configuración de sistemas operativos y software</li>
+                                    <li>Sustitución de componentes dañados y actualización de hardware</li>
+                                    <li>Atención al cliente y asesoramiento técnico personalizado</li>
+                                </ul>
+                                <p><strong>Especialización:</strong> Servicio técnico para dispositivos Apple</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-button-container">
+                <a href="#contacto" class="contact-button">
+                    Tu empresa puede ser la siguiente, contáctame
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Formación Académica -->
+    <section id="formacion" class="section">
+        <div class="container">
+            <h2 class="section-title">Formación Académica</h2>
+            <div class="education-timeline">
+                <!-- Education 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <img src="img/Logo.stucom.png" alt="Logo STUCOM" class="institution-logo" width="120" height="80">
+                                <div class="education-info">
+                                    <h3>CFGS en Desarrollo de Aplicaciones Web</h3>
+                                    <h4>STUCOM Pelai</h4>
+                                    <p class="education-period">2023 - Actualidad</p>
+                                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Barcelona</p>
+                                </div>
+                            </div>
+                            <div class="education-body">
+                                <p>Formación especializada en el diseño, desarrollo e implementación de aplicaciones web, adquiriendo competencias en:</p>
+                                <ul class="education-list">
+                                    <li>Desarrollo Frontend (HTML5, CSS3, JavaScript)</li>
+                                    <li>Desarrollo Backend (PHP, Java)</li>
+                                    <li>Gestión de bases de datos</li>
+                                    <li>Frameworks y librerías modernas</li>
+                                    <li>Despliegue y mantenimiento de aplicaciones</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <img src="img/Logo.stucom.png" alt="Logo STUCOM" class="institution-logo" width="120" height="80">
+                                <div class="education-info">
+                                    <h3>CFGM en Sistemas Microinformáticos y Redes</h3>
+                                    <h4>STUCOM Pelai</h4>
+                                    <p class="education-period">2021 - 2023</p>
+                                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Barcelona</p>
+                                </div>
+                            </div>
+                            <div class="education-body">
+                                <p>Formación técnica en instalación, configuración y mantenimiento de sistemas informáticos y redes:</p>
+                                <ul class="education-list">
+                                    <li>Administración de sistemas operativos</li>
+                                    <li>Configuración y mantenimiento de redes locales</li>
+                                    <li>Montaje y reparación de equipos informáticos</li>
+                                    <li>Fundamentos de programación</li>
+                                    <li>Soporte técnico a usuarios</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <img src="img/Logo.pedroches.png" alt="Logo IES Los Pedroches" class="institution-logo" width="120" height="80">
+                                <div class="education-info">
+                                    <h3>Educación Secundaria Obligatoria (ESO)</h3>
+                                    <h4>IES Los Pedroches</h4>
+                                    <p class="education-period">2017 - 2021</p>
+                                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Pozoblanco (Córdoba)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="grid">
+                <!-- Proyecto 1 -->
+                <article class="project-card" data-category="juego">
+                    <div class="project-image">
+                        <img src="img/proyecto1.png" alt="3 en Raya" width="400" height="300">
+                        <div class="project-links">
+                            <a href="https://github.com/Ignaciobrenas/" target="_blank" class="project-link" aria-label="Ver código en GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="/3 EN RAYA/indexX-O.html" class="project-link" aria-label="Ver demo del proyecto">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">3 en Raya</h3>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <p class="project-description">Clásico juego de 3 en raya para dos jugadores. Interfaz simple y dinámica con validación de ganadores y reinicio automático.</p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>Marzo 2025</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fa-solid fa-code-branch"></i>
+                                <span>Individual</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            
+                <!-- Proyecto 2 -->
+                <article class="project-card" data-category="app">
+                    <div class="project-image">
+                        <img src="/Climatik/logo/logo.png" alt="Climatik - App del Clima" width="400" height="300">
+                        <div class="project-links">
+                            <a href="https://github.com/Ignaciobrenas/" target="_blank" class="project-link" aria-label="Ver código en GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="/Climatik/index.html" class="project-link" aria-label="Ver demo del proyecto">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Climatik</h3>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <p class="project-description">Aplicación para consultar el clima actual y pronósticos con datos en tiempo real, diseño responsive e integración con APIs meteorológicas.</p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>Enero 2025</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fa-solid fa-code-branch"></i>
+                                <span>Equipo</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            
+                <!-- Proyecto 3 -->
+                <article class="project-card" data-category="proximamente">
+                    <div class="project-image">
+                        <img src="img/proximamente.png" alt="Próximamente" width="400" height="300">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="Próximamente">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="Próximamente">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Próximamente</h3>
+                        <div class="project-tags">
+                            <span class="tag">---</span>
+                        </div>
+                        <p class="project-description">Nuevo proyecto en desarrollo. Muy pronto estará disponible más información.</p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>2025</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fa-solid fa-code-branch"></i>
+                                <span>---</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="projects-cta">
+                <a href="https://github.com/Ignaciobrenas" target="_blank" class="btn btn-primary">
+                    Ver más proyectos en GitHub <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>¿Interesado en trabajar juntos?</h3>
+                    <p>Estoy disponible para proyectos freelance, prácticas profesionales y oportunidades laborales. Ponte en contacto conmigo a través de cualquiera de los siguientes medios:</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email</h4>
+                            <a href="mailto:ignaciobrenas@gmail.com">ignaciobrenas@gmail.com</a>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Ubicación</h4>
+                            <p>Barcelona, España</p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/ignacio-breñas-muñoz-02a90b218/" target="_blank">Ignacio Breñas</a>
+                        </div>
+                    </div>
+                    
+                    <div class="email-buttons">
+                        <h4>Envíame un correo directamente</h4>
+                        <div class="button-container">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ignaciobrenas@gmail.com&su=Contacto desde Portfolio Web" class="btn btn-email gmail" target="_blank">
+                                <i class="fa-brands fa-google"></i> Enviar con Gmail
+                            </a>
+                            <a href="https://outlook.office.com/mail/deeplink/compose?to=ignaciobrenas@gmail.com&subject=Contacto desde Portfolio Web" class="btn btn-email outlook" target="_blank">
+                                <i class="fa-brands fa-microsoft"></i> Enviar con Outlook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-image">
+                    <img src="img/contacto-ilustracion.svg" alt="Ilustración de contacto" onerror="this.src='img/logo-ignacioweb.png'; this.classList.add('fallback-img');">
+                    <div class="social-links contact-social">
+                        <a href="https://www.linkedin.com/in/ignacio-breñas-muñoz-02a90b218/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Ignacio Breñas">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Ignaciobrenas" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Ignacio Breñas">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:ignaciobrenas@gmail.com" aria-label="Email de Ignacio Breñas">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Ignacio Breñas</h3>
+                <p>Desarrollador Web & Técnico Informático</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre Mi</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#formacion">Formación</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/ignacio-breñas-muñoz-02a90b218/" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ignaciobrenas" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:ignaciobrenas@gmail.com" 
+                   aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            
+            <p class="copyright">&copy; 2025 Ignacio Breñas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="Inicio" class="back-to-top" aria-label="Volver al inicio">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
