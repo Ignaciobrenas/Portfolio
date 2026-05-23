@@ -1,0 +1,133 @@
+{
+  "hero": {
+    "title": "Ignacio Breñas Muñoz",
+    "subtitle": "Desarrollador de Aplicaciones Web & Técnico TI Junior",
+    "location": "Mataró, Barcelona"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "p1": "Soy un estudiante de Grado Superior en Desarrollo de Aplicaciones Web, con una sólida base técnica adquirida tanto en mi formación académica como en experiencias prácticas.",
+    "p2": "Me considero una persona proactiva, resolutiva y con gran capacidad de adaptación, siempre dispuesta a asumir nuevos retos y aprender de ellos. Estoy interesado en participar en proyectos reales y dinámicos para combinar el aprendizaje con la experiencia en empresa."
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "now": "Actualidad",
+    "soterguard_title": "Desarrollador de Software en prácticas",
+    "soterguard_desc": "Prácticas de DAW",
+    "soterguard_tasks": [
+      "Desarrollo Web y Backend: Integración de JavaScript/TypeScript con frameworks modernos (React, Vue.js) y construcción de servicios y APIs robustas utilizando Java y Spring, además de entornos PHP (Laravel, Symfony), creando soluciones y herramientas de gestión orientadas a satisfacer los requerimientos específicos de cada cliente.",
+      "Desarrollo de Herramientas Internas: Colaboración en el diseño y mantenimiento de software a medida para ciberdefensa y gestión de sistemas IT mediante C, C++, Go y Rust, garantizando la protección y eficiencia de los entornos del cliente.",
+      "Gestión de Datos: Diseño y optimización de consultas en entornos PostgreSQL, estructurando la información y las bases de datos en función de los objetivos y necesidades operativas de los usuarios finales.",
+      "Seguridad de Software: Aplicación de metodologías de secure coding para la validación de datos y la mitigación proactiva de vulnerabilidades, asegurando la máxima integridad de las soluciones entregadas al cliente.",
+      "Despliegue y Monitorización: Implementación de soluciones de automatización y despliegue dentro de la plataforma SoterVI, adaptando la infraestructura a la demanda real y a las necesidades del proyecto.",
+      "Administración de Sistemas: Gestión de entornos virtualizados complejos, incluyendo máquinas virtuales, contenedores y clusters de Kubernetes, para ofrecer arquitecturas estables y escalables a medida.",
+      "Metodología y Herramientas: Trabajo bajo metodología Agile, control de versiones con Git/Fork y desarrollo en entornos WSL/LXC, utilizando herramientas corporativas, Teams y Outlook para la coordinación diaria y asegurar que cada entregable esté perfectamente alineado con las expectativas del cliente."
+    ],
+    "vimtech_title": "Técnico Informático (Prácticas)",
+    "vimtech_date": "Septiembre 2024 - Marzo 2025",
+    "vimtech_l1": "Especialización en servicios informáticos y reparación de dispositivos Apple.",
+    "vimtech_l2": "Diagnósticos, mantenimiento, instalación de sistemas operativos y sustitución de componentes.",
+    "vimtech_l3": "Asesoramiento personalizado con soluciones tecnológicas a medida."
+  },
+  "volunteering": {
+    "title": "Voluntariado",
+    "ajma_title": "AJMA (Asociación de Jóvenes de Medios Audiovisuales)",
+    "ajma_date": "Mar 2023 - Ago 2025",
+    "ajma_l1_bold": "Desarrollador web:",
+    "ajma_l1": "diseño y mantenimiento de la página oficial de la asociación.",
+    "ajma_l2_bold": "Técnico informático:",
+    "ajma_l2": "mantenimiento y soporte de equipos.",
+    "ajma_l3_bold": "Cámara & Sonido:",
+    "ajma_l3": "grabación de eventos, montaje y control de equipos de audio."
+  },
+  "education": {
+    "title": "Formación",
+    "daw": "CFGS Desarrollo de Aplicaciones Web",
+    "daw_date": "2025 - Actualmente",
+    "smr": "CFGM Sistemas Microinformáticos y Redes",
+    "smr_date": "2023 - 2025",
+    "eso": "Educación Secundaria Obligatoria",
+    "eso_date": "2017 - 2021"
+  },
+  "skills": {
+    "title": "Stack Tecnológico",
+    "frontend": "Frontend",
+    "frontend_skills": ["HTML5", "CSS3", "JavaScript", "jQuery", "Angular", "Figma", "WordPress"],
+    "markup": "Marcado & Datos",
+    "markup_skills": ["XML", "XPath", "XQuery"],
+    "backend": "Backend",
+    "backend_skills": ["Java", "PHP", "Python", "Spring", "MySQL"],
+    "devops": "DevOps & Cloud",
+    "devops_skills": ["Docker", "Git", "Linux", "Azure", "Google Cloud", "AWS", "Grafana"],
+    "systems": "Sistemas & Virtualización",
+    "systems_skills": ["VirtualBox", "SQL Server", "HeidiSQL", "XAMPP", "Ubuntu", "Bash"],
+    "tools": "Otras Herramientas",
+    "tools_skills": ["Arduino", "Unity", "Blender", "VS Code"],
+    "soft": "Habilidades Blandas",
+    "soft_skills": ["Liderazgo", "Trabajo en Equipo", "Resolución de Problemas", "Proactividad", "Atención al Detalle", "Comunicación"]
+  },
+  "certifications": {
+    "title": "Certificaciones & Cursos",
+    "c1": "Java Developer (Hyperskill)",
+    "c1_status": "En Progreso (172h)",
+    "c2": "Ethical Hacker",
+    "c2_status": "Completado (70h)",
+    "c3": "Introduction to Cybersecurity",
+    "c3_status": "Completado (6h)",
+    "c4": "Introduction to Data Science",
+    "c4_status": "Completado (6h)"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "features": "Características:",
+    "tech": "Tecnologías",
+    "p1_title": "🍔 Run & Eat — Plataforma de Eventos Gastronómicos",
+    "p1_tech": "PHP, MySQL, Apache, HTML5, CSS3, JavaScript",
+    "p1_features": [
+      "Plataforma web para publicación y gestión de eventos gastronómicos",
+      "Conecta organizadores de experiencias culinarias con participantes",
+      "Eventos: carreras populares, catas de vino, burger runs, rutas de tapas...",
+      "Desarrollado íntegramente sin frameworks externos (vanilla PHP + JS)",
+      "Proyecto transversal del 1º curso de DAW en STUCOM, Barcelona"
+    ],
+    "p2_title": "🔐 Sistema de Control de Acceso",
+    "p2_tech": "Ubuntu Server, LAMPP, WordPress, Card Reader",
+    "p2_features": [
+      "Control de acceso integrado con lectores de tarjeta",
+      "Diseño web responsive y moderno",
+      "Configuración completa del servidor",
+      "Sistema de autenticación seguro"
+    ],
+    "p3_title": "🛡️ Infraestructura de Ciberseguridad",
+    "p3_tech": "Linux, Networking, Firewalls, Políticas de Seguridad",
+    "p3_features": [
+      "Estaciones de trabajo Linux hardened",
+      "Red integrada cableada e inalámbrica",
+      "Segmentación VLAN avanzada",
+      "Políticas de acceso y control"
+    ],
+    "p4_title": "🌐 Red Corporativa",
+    "p4_tech": "Active Directory, DNS, DHCP, Odoo, Linux",
+    "p4_features": [
+      "Infraestructura de dominio completa",
+      "RAID y quotas de usuario configuradas",
+      "Sistema de helpdesk integrado",
+      "Servicios de directorio avanzados"
+    ],
+    "p5_title": "🔧 Infraestructura WAN",
+    "p5_tech": "pfSense, Grafana, Prometheus, Nextcloud, Nextmail",
+    "p5_features": [
+      "Firewall de próxima generación con DMZ",
+      "RAID 5 con backups automatizados",
+      "Monitoreo en tiempo real (Grafana + Prometheus)",
+      "Almacenamiento en nube corporativo",
+      "Servicios de correo y FTP/SFTP empresarial"
+    ]
+  },
+  "stats": {
+    "title": "Estadísticas de GitHub"
+  },
+  "footer": {
+    "created_with": "Creado con Next.js y React. Abierto a nuevas oportunidades y colaboraciones."
+  }
+}

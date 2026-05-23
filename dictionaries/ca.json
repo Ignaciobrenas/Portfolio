@@ -1,0 +1,178 @@
+{
+  "hero": {
+    "title": "Ignacio Breñas Muñoz",
+    "subtitle": "Desenvolupador d'Aplicacions Web i Tècnic TI Junior",
+    "location": "Mataró, Barcelona"
+  },
+  "about": {
+    "title": "Sobre mi",
+    "p1": "Sóc un estudiant de Grau Superior en Desenvolupament d'Aplicacions Web, amb una sòlida base tècnica adquirida tant en la meva formació acadèmica com en experiències pràctiques.",
+    "p2": "Em considero una persona proactiva, resolutiva i amb gran capacitat d'adaptació, sempre disposada a assumir nous reptes i aprendre'n. Estic interessat en participar en projectes reals i dinàmics per combinar l'aprenentatge a l'aula amb l'experiència a l'empresa."
+  },
+  "experience": {
+    "title": "Experiència Professional",
+    "now": "Actualitat",
+    "soterguard_title": "Desenvolupador de Programari en pràctiques",
+    "soterguard_desc": "Pràctiques de DAW",
+    "soterguard_tasks": [
+      "Desenvolupament Web i Backend: Integració de JavaScript/TypeScript amb frameworks moderns (React, Vue.js) i construcció de serveis i APIs robustes utilitzant Java i Spring, a més d'entorns PHP (Laravel, Symfony), creant solucions i eines de gestió orientades a satisfer els requeriments específics de cada client.",
+      "Desenvolupament d'Eines Internes: Col·laboració en el disseny i manteniment de programari a mida per a ciberdefensa i gestió de sistemes IT mitjançant C, C++, Go i Rust, garantint la protecció i eficiència dels entorns del client.",
+      "Gestió de Dades: Disseny i optimització de consultes en entorns PostgreSQL, estructurant la informació i les bases de dades en funció dels objectius i necessitats operatives dels usuaris finals.",
+      "Seguretat de Programari: Aplicació de metodologies de secure coding per a la validació de dades i la mitigació proactiva de vulnerabilitats, assegurant la màxima integritat de les solucions entregades al client.",
+      "Desplegament i Monitorització: Implementació de solucions d'automatització i desplegament dins de la plataforma SoterVI, adaptant la infraestructura a la demanda real i a les necessitats del projecte.",
+      "Administració de Sistemes: Gestió d'entorns virtualitzats complexos, incloent-hi màquines virtuals, contenidors i clústers de Kubernetes, per oferir arquitectures estables i escalables a mida.",
+      "Metodologia i Eines: Treball sota metodologia Agile, control de versions amb Git/Fork i desenvolupament en entorns WSL/LXC, utilitzant eines corporatives, Teams i Outlook per a la coordinació diària i assegurar que cada lliurable estigui perfectament alineat amb les expectatives del client."
+    ],
+    "vimtech_title": "Tècnic Informàtic (Pràctiques)",
+    "vimtech_date": "Setembre 2024 - Març 2025",
+    "vimtech_l1": "Especialització en serveis informàtics i reparació de dispositius Apple.",
+    "vimtech_l2": "Diagnòstics, manteniment, instal·lació de sistemes operatius i substitució de components.",
+    "vimtech_l3": "Assessorament personalitzat amb solucions tecnològiques a mida."
+  },
+  "volunteering": {
+    "title": "Voluntariat",
+    "ajma_title": "AJMA (Associació de Joves de Mitjans Audiovisuals)",
+    "ajma_date": "Mar 2023 - Ago 2025",
+    "ajma_l1_bold": "Desenvolupador web:",
+    "ajma_l1": "disseny i manteniment de la pàgina oficial de l'associació.",
+    "ajma_l2_bold": "Tècnic informàtic:",
+    "ajma_l2": "manteniment i suport d'equips.",
+    "ajma_l3_bold": "Càmera & So:",
+    "ajma_l3": "gravació d'esdeveniments, muntatge i control d'equips d'àudio."
+  },
+  "education": {
+    "title": "Formació",
+    "daw": "CFGS Desenvolupament d'Aplicacions Web",
+    "daw_date": "2025 - Actualment",
+    "smr": "CFGM Sistemes Microinformàtics i Xarxes",
+    "smr_date": "2023 - 2025",
+    "eso": "Educació Secundària Obligatòria",
+    "eso_date": "2017 - 2021"
+  },
+  "skills": {
+    "title": "Stack Tecnológico",
+    "frontend": "Frontend",
+    "frontend_skills": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "jQuery",
+      "Angular",
+      "Figma",
+      "WordPress"
+    ],
+    "markup": "Marcado & Datos",
+    "markup_skills": [
+      "XML",
+      "XPath",
+      "XQuery"
+    ],
+    "backend": "Backend",
+    "backend_skills": [
+      "Java",
+      "PHP",
+      "Python",
+      "Spring",
+      "MySQL"
+    ],
+    "devops": "DevOps & Cloud",
+    "devops_skills": [
+      "Docker",
+      "Git",
+      "Linux",
+      "Azure",
+      "Google Cloud",
+      "AWS",
+      "Grafana"
+    ],
+    "systems": "Sistemas & Virtualización",
+    "systems_skills": [
+      "VirtualBox",
+      "SQL Server",
+      "HeidiSQL",
+      "XAMPP",
+      "Ubuntu",
+      "Bash"
+    ],
+    "tools": "Otras Herramientas",
+    "tools_skills": [
+      "Arduino",
+      "Unity",
+      "Blender",
+      "VS Code"
+    ],
+    "soft": "Habilidades Blandas",
+    "soft_skills": [
+      "Liderazgo",
+      "Trabajo en Equipo",
+      "Resolución de Problemas",
+      "Proactividad",
+      "Atención al Detalle",
+      "Comunicación"
+    ]
+  },
+  "footer": {
+    "created_with": "Creado con Next.js y React. Abierto a nuevas oportunidades y colaboraciones."
+  },
+  "certifications": {
+    "title": "Certificaciones & Cursos",
+    "c1": "Java Developer (Hyperskill)",
+    "c1_status": "En Progreso (172h)",
+    "c2": "Ethical Hacker",
+    "c2_status": "Completado (70h)",
+    "c3": "Introduction to Cybersecurity",
+    "c3_status": "Completado (6h)",
+    "c4": "Introduction to Data Science",
+    "c4_status": "Completado (6h)"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "features": "Características:",
+    "tech": "Tecnologías",
+    "p1_title": "🍔 Run & Eat — Plataforma de Eventos Gastronómicos",
+    "p1_tech": "PHP, MySQL, Apache, HTML5, CSS3, JavaScript",
+    "p1_features": [
+      "Plataforma web para publicación y gestión de eventos gastronómicos",
+      "Conecta organizadores de experiencias culinarias con participantes",
+      "Eventos: carreras populares, catas de vino, burger runs, rutas de tapas...",
+      "Desarrollado íntegramente sin frameworks externos (vanilla PHP + JS)",
+      "Proyecto transversal del 1º curso de DAW en STUCOM, Barcelona"
+    ],
+    "p2_title": "🔐 Sistema de Control de Acceso",
+    "p2_tech": "Ubuntu Server, LAMPP, WordPress, Card Reader",
+    "p2_features": [
+      "Control de acceso integrado con lectores de tarjeta",
+      "Diseño web responsive y moderno",
+      "Configuración completa del servidor",
+      "Sistema de autenticación seguro"
+    ],
+    "p3_title": "🛡️ Infraestructura de Ciberseguridad",
+    "p3_tech": "Linux, Networking, Firewalls, Políticas de Seguridad",
+    "p3_features": [
+      "Estaciones de trabajo Linux hardened",
+      "Red integrada cableada e inalámbrica",
+      "Segmentación VLAN avanzada",
+      "Políticas de acceso y control"
+    ],
+    "p4_title": "🌐 Red Corporativa",
+    "p4_tech": "Active Directory, DNS, DHCP, Odoo, Linux",
+    "p4_features": [
+      "Infraestructura de dominio completa",
+      "RAID y quotas de usuario configuradas",
+      "Sistema de helpdesk integrado",
+      "Servicios de directorio avanzados"
+    ],
+    "p5_title": "🔧 Infraestructura WAN",
+    "p5_tech": "pfSense, Grafana, Prometheus, Nextcloud, Nextmail",
+    "p5_features": [
+      "Firewall de próxima generación con DMZ",
+      "RAID 5 con backups automatizados",
+      "Monitoreo en tiempo real (Grafana + Prometheus)",
+      "Almacenamiento en nube corporativo",
+      "Servicios de correo y FTP/SFTP empresarial"
+    ]
+  },
+  "stats": {
+    "title": "Estadísticas de GitHub"
+  }
+}

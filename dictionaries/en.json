@@ -1,0 +1,133 @@
+{
+  "hero": {
+    "title": "Ignacio Breñas Muñoz",
+    "subtitle": "Web Application Developer & Junior IT Technician",
+    "location": "Mataró, Barcelona"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "I am a Higher Degree student in Web Application Development, with a solid technical foundation acquired through both my academic training and practical experiences.",
+    "p2": "I consider myself a proactive, decisive person with a great capacity for adaptation, always ready to take on new challenges and learn from them. I am interested in participating in real and dynamic projects to combine classroom learning with business experience."
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "now": "Present",
+    "soterguard_title": "Software Developer (Internship)",
+    "soterguard_desc": "Web Application Development Internship (DAW).",
+    "soterguard_tasks": [
+      "Web and Backend Development: Integration of JavaScript/TypeScript with modern frameworks (React, Vue.js) and construction of robust services and APIs using Java and Spring, as well as PHP environments (Laravel, Symfony), creating solutions and management tools aimed at satisfying the specific requirements of each client.",
+      "Internal Tools Development: Collaboration in the design and maintenance of custom software for cyber defense and IT systems management using C, C++, Go, and Rust, ensuring the protection and efficiency of client environments.",
+      "Data Management: Design and optimization of queries in PostgreSQL environments, structuring information and databases based on the objectives and operational needs of end users.",
+      "Software Security: Application of secure coding methodologies for data validation and proactive mitigation of vulnerabilities, ensuring the maximum integrity of solutions delivered to the client.",
+      "Deployment and Monitoring: Implementation of automation and deployment solutions within the SoterVI platform, adapting the infrastructure to real demand and project needs.",
+      "Systems Administration: Management of complex virtualized environments, including virtual machines, containers, and Kubernetes clusters, to offer stable and scalable custom architectures.",
+      "Methodology and Tools: Work under Agile methodology, version control with Git/Fork, and development in WSL/LXC environments, using corporate tools, Teams, and Outlook for daily coordination and ensuring each deliverable perfectly aligns with client expectations."
+    ],
+    "vimtech_title": "IT Technician (Internship)",
+    "vimtech_date": "September 2024 - March 2025",
+    "vimtech_l1": "Specialization in IT services and repair of Apple devices.",
+    "vimtech_l2": "Diagnostics, maintenance, installation of operating systems, and replacement of components.",
+    "vimtech_l3": "Personalized advice with customized technological solutions."
+  },
+  "volunteering": {
+    "title": "Volunteering",
+    "ajma_title": "AJMA (Association of Young Audiovisual Media)",
+    "ajma_date": "Mar 2023 - Aug 2025",
+    "ajma_l1_bold": "Web Developer:",
+    "ajma_l1": "design and maintenance of the association's official website.",
+    "ajma_l2_bold": "IT Technician:",
+    "ajma_l2": "equipment maintenance and support.",
+    "ajma_l3_bold": "Camera & Sound:",
+    "ajma_l3": "event recording, assembly, and control of audio equipment."
+  },
+  "education": {
+    "title": "Education",
+    "daw": "Higher Degree in Web Application Development",
+    "daw_date": "2025 - Present",
+    "smr": "Mid-Level Degree in Microcomputer Systems and Networks",
+    "smr_date": "2023 - 2025",
+    "eso": "Compulsory Secondary Education",
+    "eso_date": "2017 - 2021"
+  },
+  "skills": {
+    "title": "Tech Stack",
+    "frontend": "Frontend",
+    "frontend_skills": ["HTML5", "CSS3", "JavaScript", "jQuery", "Angular", "Figma", "WordPress"],
+    "markup": "Markup & Data",
+    "markup_skills": ["XML", "XPath", "XQuery"],
+    "backend": "Backend",
+    "backend_skills": ["Java", "PHP", "Python", "Spring", "MySQL"],
+    "devops": "DevOps & Cloud",
+    "devops_skills": ["Docker", "Git", "Linux", "Azure", "Google Cloud", "AWS", "Grafana"],
+    "systems": "Systems & Virtualization",
+    "systems_skills": ["VirtualBox", "SQL Server", "HeidiSQL", "XAMPP", "Ubuntu", "Bash"],
+    "tools": "Other Tools",
+    "tools_skills": ["Arduino", "Unity", "Blender", "VS Code"],
+    "soft": "Soft Skills",
+    "soft_skills": ["Leadership", "Teamwork", "Problem Solving", "Proactivity", "Attention to Detail", "Communication"]
+  },
+  "certifications": {
+    "title": "Certifications & Courses",
+    "c1": "Java Developer (Hyperskill)",
+    "c1_status": "In Progress (172h)",
+    "c2": "Ethical Hacker",
+    "c2_status": "Completed (70h)",
+    "c3": "Introduction to Cybersecurity",
+    "c3_status": "Completed (6h)",
+    "c4": "Introduction to Data Science",
+    "c4_status": "Completed (6h)"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "features": "Features:",
+    "tech": "Technologies",
+    "p1_title": "🍔 Run & Eat — Gastronomic Events Platform",
+    "p1_tech": "PHP, MySQL, Apache, HTML5, CSS3, JavaScript",
+    "p1_features": [
+      "Web platform for publishing and managing gastronomic events",
+      "Connects culinary experience organizers with participants",
+      "Events: popular races, wine tastings, burger runs, tapas routes...",
+      "Developed entirely without external frameworks (vanilla PHP + JS)",
+      "Transversal project of the 1st year of Web App Dev at STUCOM, Barcelona"
+    ],
+    "p2_title": "🔐 Access Control System",
+    "p2_tech": "Ubuntu Server, LAMPP, WordPress, Card Reader",
+    "p2_features": [
+      "Integrated access control with card readers",
+      "Responsive and modern web design",
+      "Complete server configuration",
+      "Secure authentication system"
+    ],
+    "p3_title": "🛡️ Cybersecurity Infrastructure",
+    "p3_tech": "Linux, Networking, Firewalls, Security Policies",
+    "p3_features": [
+      "Hardened Linux workstations",
+      "Integrated wired and wireless network",
+      "Advanced VLAN segmentation",
+      "Access and control policies"
+    ],
+    "p4_title": "🌐 Corporate Network",
+    "p4_tech": "Active Directory, DNS, DHCP, Odoo, Linux",
+    "p4_features": [
+      "Complete domain infrastructure",
+      "Configured user quotas and RAID",
+      "Integrated helpdesk system",
+      "Advanced directory services"
+    ],
+    "p5_title": "🔧 WAN Infrastructure",
+    "p5_tech": "pfSense, Grafana, Prometheus, Nextcloud, Nextmail",
+    "p5_features": [
+      "Next-generation firewall with DMZ",
+      "RAID 5 with automated backups",
+      "Real-time monitoring (Grafana + Prometheus)",
+      "Corporate cloud storage",
+      "Enterprise email and FTP/SFTP services"
+    ]
+  },
+  "stats": {
+    "title": "GitHub Statistics"
+  },
+  "footer": {
+    "created_with": "Built with Next.js and React. Open to new opportunities and collaborations."
+  }
+}

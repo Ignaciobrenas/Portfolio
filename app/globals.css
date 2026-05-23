@@ -191,3 +191,12 @@ footer {
   text-align: center;
   color: var(--text-secondary);
 }
+
+.flex-wrap { flex-wrap: wrap; }
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.2rem; }
+  .hero-subtitle { font-size: 1.1rem; }
+  .section-title { font-size: 1.8rem; }
+  .profile-img-container { width: 200px; height: 200px; }
+  .glass-card { padding: 1.5rem; }
+}
