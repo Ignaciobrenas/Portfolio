@@ -17,10 +17,10 @@ export default async function Home({ params: { lang } }) {
         display: 'flex',
         alignItems: 'center'
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', cursor: 'pointer' }} onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+        <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none' }}>
           <img src="/1.png" alt="Logo" style={{ height: '45px', borderRadius: '50%', border: '2px solid var(--accent-color)' }} />
           <span style={{ fontWeight: 'bold', fontSize: '1.25rem', color: 'var(--text-primary)', letterSpacing: '1px' }}>IGNACIO</span>
-        </div>
+        </a>
       </header>
 
       {/* Hero Section */}
