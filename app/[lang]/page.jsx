@@ -79,7 +79,7 @@ export default async function Home({ params: { lang } }) {
             </div>
             <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem', fontWeight: '500' }}>{dict.experience.soterguard_desc}</p>
             <ul style={{ paddingLeft: '1.5rem', color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {dict.experience.soterguard_tasks.map((task, index) => {
+              {dict.experience.soterguard_tasks?.map((task, index) => {
                 const parts = task.split(': ');
                 return (
                   <li key={index} style={{ lineHeight: '1.5' }}>
@@ -180,37 +180,37 @@ export default async function Home({ params: { lang } }) {
           <div>
             <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', borderBottom: '1px solid var(--card-border)', paddingBottom: '0.5rem' }}>{dict.skills.frontend}</h3>
             <div className="flex flex-wrap gap-2">
-              {dict.skills.frontend_skills.map(skill => <span key={skill} className="badge">{skill}</span>)}
+              {dict.skills.frontend_skills?.map(skill => <span key={skill} className="badge">{skill}</span>)}
             </div>
           </div>
           <div>
             <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', borderBottom: '1px solid var(--card-border)', paddingBottom: '0.5rem' }}>{dict.skills.backend}</h3>
             <div className="flex flex-wrap gap-2">
-              {dict.skills.backend_skills.map(skill => <span key={skill} className="badge" style={{ background: 'rgba(252, 211, 77, 0.1)', color: '#FCD34D', borderColor: 'rgba(252, 211, 77, 0.3)' }}>{skill}</span>)}
+              {dict.skills.backend_skills?.map(skill => <span key={skill} className="badge" style={{ background: 'rgba(252, 211, 77, 0.1)', color: '#FCD34D', borderColor: 'rgba(252, 211, 77, 0.3)' }}>{skill}</span>)}
             </div>
           </div>
           <div>
             <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', borderBottom: '1px solid var(--card-border)', paddingBottom: '0.5rem' }}>{dict.skills.devops}</h3>
             <div className="flex flex-wrap gap-2">
-              {dict.skills.devops_skills.map(skill => <span key={skill} className="badge" style={{ background: 'rgba(16, 185, 129, 0.1)', color: '#10B981', borderColor: 'rgba(16, 185, 129, 0.3)' }}>{skill}</span>)}
+              {dict.skills.devops_skills?.map(skill => <span key={skill} className="badge" style={{ background: 'rgba(16, 185, 129, 0.1)', color: '#10B981', borderColor: 'rgba(16, 185, 129, 0.3)' }}>{skill}</span>)}
             </div>
           </div>
           <div>
             <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', borderBottom: '1px solid var(--card-border)', paddingBottom: '0.5rem' }}>{dict.skills.systems}</h3>
             <div className="flex flex-wrap gap-2">
-              {dict.skills.systems_skills.map(skill => <span key={skill} className="badge" style={{ background: 'rgba(248, 113, 113, 0.1)', color: '#F87171', borderColor: 'rgba(248, 113, 113, 0.3)' }}>{skill}</span>)}
+              {dict.skills.systems_skills?.map(skill => <span key={skill} className="badge" style={{ background: 'rgba(248, 113, 113, 0.1)', color: '#F87171', borderColor: 'rgba(248, 113, 113, 0.3)' }}>{skill}</span>)}
             </div>
           </div>
           <div>
             <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', borderBottom: '1px solid var(--card-border)', paddingBottom: '0.5rem' }}>{dict.skills.markup} & {dict.skills.tools}</h3>
             <div className="flex flex-wrap gap-2">
-              {[...dict.skills.markup_skills, ...dict.skills.tools_skills].map(skill => <span key={skill} className="badge" style={{ background: 'rgba(167, 139, 250, 0.1)', color: '#A78BFA', borderColor: 'rgba(167, 139, 250, 0.3)' }}>{skill}</span>)}
+              {[...(dict.skills.markup_skills || []), ...(dict.skills.tools_skills || [])]?.map(skill => <span key={skill} className="badge" style={{ background: 'rgba(167, 139, 250, 0.1)', color: '#A78BFA', borderColor: 'rgba(167, 139, 250, 0.3)' }}>{skill}</span>)}
             </div>
           </div>
           <div>
             <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', borderBottom: '1px solid var(--card-border)', paddingBottom: '0.5rem' }}>{dict.skills.soft}</h3>
             <div className="flex flex-wrap gap-2">
-              {dict.skills.soft_skills.map(skill => <span key={skill} className="badge" style={{ background: 'rgba(147, 197, 253, 0.1)', color: '#93C5FD', borderColor: 'rgba(147, 197, 253, 0.3)' }}>{skill}</span>)}
+              {dict.skills.soft_skills?.map(skill => <span key={skill} className="badge" style={{ background: 'rgba(147, 197, 253, 0.1)', color: '#93C5FD', borderColor: 'rgba(147, 197, 253, 0.3)' }}>{skill}</span>)}
             </div>
           </div>
         </div>
@@ -231,7 +231,7 @@ export default async function Home({ params: { lang } }) {
               <h3 style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>{proj.title}</h3>
               <p style={{ color: 'var(--accent-color)', fontSize: '0.9rem', marginBottom: '1rem' }}><strong>{dict.projects.tech}:</strong> {proj.tech}</p>
               <ul style={{ paddingLeft: '1.5rem', color: 'var(--text-secondary)', fontSize: '0.95rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                {proj.feats.map((f, j) => <li key={j}>{f}</li>)}
+                {proj.feats?.map((f, j) => <li key={j}>{f}</li>)}
               </ul>
             </div>
           ))}

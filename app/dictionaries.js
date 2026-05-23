@@ -6,4 +6,9 @@ const dictionaries = {
   ca: () => import('../dictionaries/ca.json').then((module) => module.default),
 }
 
-export const getDictionary = async (locale) => dictionaries[locale]()
+export const getDictionary = async (locale) => {
+  if (typeof dictionaries[locale] !== 'function') {
+    return dictionaries['es']()
+  }
+  return dictionaries[locale]()
+}
