@@ -1,59 +1,60 @@
-# Portfolio Personal de Ignacio Breñas Muñoz 🚀
+﻿# ðŸš€ Ignacio BreÃ±as MuÃ±oz Â· Personal Portfolio
 
-Este es el repositorio de mi portfolio personal, diseñado para mostrar mi experiencia, habilidades, proyectos y formación. Está construido con un enfoque en el rendimiento, un diseño premium moderno ("Glassmorphism") y soporte multilingüe.
+<p align="center">
+  <a href="https://porfoli-gamma.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/LIVE_DEMO-porfoli--gamma.vercel.app-10B981?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+  </a>
+  <img src="https://img.shields.io/badge/Next.js_14-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React_18-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Design-Glassmorphism-047857?style=for-the-badge" alt="Glassmorphism" />
+</p>
 
-## ✨ Características
-
-- **Diseño Premium**: Interfaz moderna en modo oscuro, utilizando un diseño "Glassmorphism" con sombras de neón, tarjetas translúcidas y animaciones de scroll interactivas.
-- **Totalmente Responsivo**: Adaptado perfectamente para dispositivos móviles, tablets y monitores grandes mediante un sistema de cuadrícula (Grid) CSS puro.
-- **Multilingüe (i18n)**: Soporte nativo para múltiples idiomas (Español, Inglés, Catalán, Francés) a través del sistema de enrutamiento y diccionarios de Next.js.
-- **Animaciones Inteligentes**: Los elementos aparecen fluidamente (fade-in-up) a medida que el usuario hace scroll gracias a la API de IntersectionObserver.
-
-## 🛠️ Tecnologías Utilizadas
-
-- **[Next.js](https://nextjs.org/) (v14)**: Framework de React para el renderizado y enrutamiento (Server Components & App Router).
-- **[React](https://reactjs.org/) (v18)**: Biblioteca principal para construir la interfaz de usuario.
-- **CSS Vanilla**: Estilos personalizados avanzados sin depender de frameworks pesados, garantizando un rendimiento óptimo y un diseño a medida.
-- **[Lucide React](https://lucide.dev/)**: Para la iconografía del sitio.
-
-## 🚀 Cómo Empezar (Desarrollo Local)
-
-Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
-
-### Opción 1: Entorno Configurado (Windows)
-Si tienes el script de inicio en el directorio raíz, simplemente ejecuta:
-```bash
-start-dev.bat
-```
-Esto configurará automáticamente las variables de entorno de Node.js locales (ubicadas en la carpeta `node-bin`) y lanzará el servidor.
-
-### Opción 2: Usando Node/npm global
-Si tienes Node.js (v18 o superior) instalado globalmente en tu sistema, abre tu terminal y ejecuta:
-
-1. **Instalar dependencias:**
-   ```bash
-   npm install
-   ```
-
-2. **Iniciar el servidor de desarrollo:**
-   ```bash
-   npm run dev
-   ```
-
-3. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
-
-## 📁 Estructura del Proyecto
-
-- `app/` - Contiene la lógica de enrutamiento principal (App Router), diseño (layout) y estilos globales (`globals.css`).
-- `components/` - Componentes reutilizables de React (ej. `LanguageSwitcher`, `RevealOnScroll`).
-- `dictionaries/` - Archivos JSON con las traducciones para el soporte multilingüe.
-- `public/` - Activos estáticos como imágenes y el currículum en PDF.
-
-## 🤝 Contacto
-
-- **LinkedIn**: [Perfil de LinkedIn](https://www.linkedin.com/in/ignaciobrenas)
-- **GitHub**: [Perfil de GitHub](https://github.com/Ignaciobrenas)
-- **Email**: ignaciobrenas@gmail.com
+> ðŸŒ **Live Website / Web en ProducciÃ³n:** [**porfoli-gamma.vercel.app**](https://porfoli-gamma.vercel.app)
 
 ---
-*Construido con dedicación y aprendizaje continuo.*
+
+## ðŸ“Œ Overview / DescripciÃ³n General
+
+### ðŸ‡¬ðŸ‡§ English
+Personal portfolio website designed to showcase my software engineering background, IT support experience, highlighted projects, education, and technical competencies. It is crafted with modern **Next.js 14 (App Router)** and **React 18**, featuring an elegant dark glassmorphism aesthetic, smooth scroll-triggered reveal animations, and native multi-language support.
+
+### ðŸ‡ªðŸ‡¸ EspaÃ±ol
+Portfolio personal diseÃ±ado para presentar mi perfil en desarrollo de software, experiencia previa en soporte de sistemas e infraestructura, proyectos destacados y stack tecnolÃ³gico. Construido con **Next.js 14** y **React 18**, cuenta con un diseÃ±o dark-mode basado en *Glassmorphism*, animaciones de revelaciÃ³n con scroll y soporte multilingÃ¼e nativo.
+
+---
+
+## âœ¨ Features / CaracterÃ­sticas
+
+- ðŸ’Ž **Glassmorphism UI:** Neon glows, translucent frosted glass cards, and modern dark color scheme.
+- ðŸ“± **Fully Responsive:** Custom grid architecture optimized for mobile, tablet, and widescreen monitors.
+- ðŸŒ **Multilingual Support (i18n):** Instant locale switching between Spanish, English, Catalan, and French.
+- âš¡ **High-Performance Animations:** Zero-dependency IntersectionObserver reveal animations for buttery 60 FPS transitions.
+
+---
+
+## ðŸ› ï¸ Tech Stack
+
+- **Framework:** [Next.js 14](https://nextjs.org/) (Server Components & App Router)
+- **Library:** [React 18](https://reactjs.org/)
+- **Styling:** Vanilla CSS with custom design tokens and fluid grid layouts
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Deployment:** [Vercel](https://vercel.com/)
+
+---
+
+## ðŸš€ Local Development
+
+`ash
+# 1. Install dependencies
+npm install
+
+# 2. Start development server
+npm run dev
+`
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## ðŸ“„ License
+
+Distributed under the **MIT License**.
