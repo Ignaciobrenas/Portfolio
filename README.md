@@ -1,4 +1,4 @@
-﻿# ðŸš€ Ignacio BreÃ±as MuÃ±oz Â· Personal Portfolio
+# 🚀 Ignacio Breñas Muñoz · Personal Portfolio
 
 <p align="center">
   <a href="https://porfoli-gamma.vercel.app" target="_blank">
@@ -9,52 +9,72 @@
   <img src="https://img.shields.io/badge/Design-Glassmorphism-047857?style=for-the-badge" alt="Glassmorphism" />
 </p>
 
-> ðŸŒ **Live Website / Web en ProducciÃ³n:** [**porfoli-gamma.vercel.app**](https://porfoli-gamma.vercel.app)
+> 🌐 **Live Website / Web en Producción:** [**porfoli-gamma.vercel.app**](https://porfoli-gamma.vercel.app)
 
 ---
 
-## ðŸ“Œ Overview / DescripciÃ³n General
+## Descripción del Proyecto
 
-### ðŸ‡¬ðŸ‡§ English
-Personal portfolio website designed to showcase my software engineering background, IT support experience, highlighted projects, education, and technical competencies. It is crafted with modern **Next.js 14 (App Router)** and **React 18**, featuring an elegant dark glassmorphism aesthetic, smooth scroll-triggered reveal animations, and native multi-language support.
-
-### ðŸ‡ªðŸ‡¸ EspaÃ±ol
-Portfolio personal diseÃ±ado para presentar mi perfil en desarrollo de software, experiencia previa en soporte de sistemas e infraestructura, proyectos destacados y stack tecnolÃ³gico. Construido con **Next.js 14** y **React 18**, cuenta con un diseÃ±o dark-mode basado en *Glassmorphism*, animaciones de revelaciÃ³n con scroll y soporte multilingÃ¼e nativo.
+Portfolio personal diseñado para presentar mi perfil en desarrollo de software, experiencia previa en soporte de sistemas e infraestructura, proyectos destacados y stack tecnológico. Construido con **Next.js 14** y **React 18**, cuenta con un diseño dark-mode basado en *Glassmorphism*, animaciones de revelación con scroll y soporte multilingüe nativo.
 
 ---
 
-## âœ¨ Features / CaracterÃ­sticas
+## ✨ Features / Características
 
-- ðŸ’Ž **Glassmorphism UI:** Neon glows, translucent frosted glass cards, and modern dark color scheme.
-- ðŸ“± **Fully Responsive:** Custom grid architecture optimized for mobile, tablet, and widescreen monitors.
-- ðŸŒ **Multilingual Support (i18n):** Instant locale switching between Spanish, English, Catalan, and French.
-- âš¡ **High-Performance Animations:** Zero-dependency IntersectionObserver reveal animations for buttery 60 FPS transitions.
+- 💎 **Glassmorphism UI:** Sombras de neón, tarjetas translúcidas y una estética oscura premium de alto contraste.
+- 📱 **Totalmente Responsivo:** Diseño fluido optimizado para smartphones, tablets y pantallas de escritorio mediante CSS Grid.
+- 🌐 **Soporte Multilingüe (i18n):** Cambio instantáneo de idioma entre Español, Inglés, Catalán y Francés mediante diccionarios JSON.
+- ⚡ **Animaciones de Alto Rendimiento:** Transiciones fluidas a 60 FPS mediante `IntersectionObserver` sin dependencias pesadas.
 
 ---
 
-## ðŸ› ï¸ Tech Stack
+## 🛠️ Tech Stack
 
 - **Framework:** [Next.js 14](https://nextjs.org/) (Server Components & App Router)
-- **Library:** [React 18](https://reactjs.org/)
-- **Styling:** Vanilla CSS with custom design tokens and fluid grid layouts
-- **Icons:** [Lucide React](https://lucide.dev/)
-- **Deployment:** [Vercel](https://vercel.com/)
+- **Biblioteca:** [React 18](https://reactjs.org/)
+- **Estilos:** Vanilla CSS con variables de diseño personalizadas y layouts fluidos
+- **Iconografía:** [Lucide React](https://lucide.dev/)
+- **Despliegue:** [Vercel](https://vercel.com/)
 
 ---
 
-## ðŸš€ Local Development
+## 🚀 Desarrollo Local
 
-`ash
-# 1. Install dependencies
+### Opción 1: Script Automatizado (Windows)
+```bash
+start-dev.bat
+```
+
+### Opción 2: Usando Node / npm
+```bash
+# 1. Instalar dependencias
 npm install
 
-# 2. Start development server
+# 2. Iniciar servidor de desarrollo
 npm run dev
-`
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+```
+
+Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
 
 ---
 
-## ðŸ“„ License
+## 📁 Estructura del Proyecto
 
-Distributed under the **MIT License**.
+- `app/` - Lógica de enrutamiento principal (App Router), layout y estilos globales (`globals.css`).
+- `components/` - Componentes reutilizables de React (`LanguageSwitcher`, `RevealOnScroll`, etc.).
+- `dictionaries/` - Archivos JSON con las traducciones para soporte multi-idioma (es, en, ca, fr).
+- `public/` - Activos estáticos, imágenes y currículum en PDF.
+
+---
+
+## 🤝 Contacto
+
+- **LinkedIn:** [linkedin.com/in/ignaciobrenas](https://www.linkedin.com/in/ignaciobrenas)
+- **GitHub:** [github.com/Ignaciobrenas](https://github.com/Ignaciobrenas)
+- **Email:** ignaciobrenas@gmail.com
+
+---
+
+## 📄 Licencia
+
+Distribuido bajo la **Licencia MIT**.
